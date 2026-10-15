@@ -35,4 +35,4 @@ Keys remain server-side. Website text is inert evidence, reports escape content,
 
 - X: https://x.com/jhahimanshu653/status/2110603891473814010 (published and verified; @Tiny_Fish tag, repository/demo links and native demo attached).
 
-Publications are verified. Final bounty submission has not been made and requires separate owner approval.
+Publications are verified. Final bounty submission was explicitly approved and completed on 15 October 2026; the portal confirmed the build is in the TinyFish review queue. See SUBMISSION-RECEIPT.md. Approval and payment remain unawarded.

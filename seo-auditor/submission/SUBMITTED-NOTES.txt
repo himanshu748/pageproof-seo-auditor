@@ -1,0 +1,10 @@
+PageProof audits a permitted public HTTPS URL and optional target query, then produces evidence, likely impact and specific fixes with HTML/JSON downloads.
+
+TinyFish Search supplies returned links/snippets; live Fetch (ttl: 0) shows extracted text, bounded excerpts and title/H1 phrase presence. Browser provides rendered DOM and actual navigation responses. Deterministic checks cover title, description, headings, canonical, robots, alt text, Open Graph and JSON-LD syntax/basic shape. Unknowns stay not tested and are excluded from the published heuristic score.
+
+The attached 80-second edited browser-capture demo begins with a genuine 14 Oct TinyFish documentation audit, then replays genuine 12 Oct Example Domain and TinyFish homepage receipts. The homepage Search failure remains visible. The malformed JSON-LD scene is explicitly synthetic. Redacted live receipts, README, setup, demo script and 30 automated tests are in the repo. Tests, type-check, build, clean dependency install and local HTML/JSON export checks passed.
+
+Server-side environment keys, URL/DNS SSRF controls, bounded GET-only browser access, redacted logs and durable request budgets use existing approved free credits only. No site modifications, purchases or top-ups. Remote provider DNS remains a trust boundary. Public HTTPS only; same-origin link checks and JSON-LD semantic/rich-result validity are not tested. No Google rankings, indexing, traffic or performance metrics are invented.
+
+Discord showcase: https://discord.com/channels/1200506685236711554/1554420983539048508/threads/1560144953877725196
+Demo: https://github.com/himanshu748/pageproof-seo-auditor/blob/codex/publication/seo-auditor/submission/PageProof-demo.mp4
