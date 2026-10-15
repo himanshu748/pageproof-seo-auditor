@@ -1,8 +1,8 @@
 # PageProof submission readiness — 15 October 2026
 
-**Verdict: local package ready for approved publication. Not submitted.**
+**Verdict: public repository and required social posts verified. Final bounty submission pending owner approval.**
 
-The runnable MVP, 80-second captioned demo, genuine redacted receipts, fixture suite and public-copy drafts are prepared. TinyBounties still requires a working public build link, LinkedIn post tagging TinyFish and TinyFish Discord #showcase post. Those external actions remain approval-gated by the user's instruction.
+The runnable MVP, 80-second captioned demo, genuine redacted receipts, fixture suite and public-copy drafts are prepared. TinyBounties still requires a working public build link, LinkedIn post tagging TinyFish and TinyFish Discord #showcase post. The owner approved those publication actions; they are now complete. Final bounty submission still requires separate approval.
 
 ## Review these artifacts
 
@@ -30,9 +30,9 @@ The runnable MVP, 80-second captioned demo, genuine redacted receipts, fixture s
 - [x] Meaningful Search + Fetch + rendered Browser integration, actionable findings and measurable-only scoring.
 - [x] Real-page evidence, tests, README, demo and prepared copy.
 - [x] Fresh dependency install, 30 tests, build and compiled-server/export smoke checks on 15 October.
-- [ ] User approves public repository publication: proposed `himanshu748/pageproof-seo-auditor`, only the reviewed PageProof bundle.
-- [ ] Publish and verify the working repository link and demo link/attachment.
-- [ ] User approves prepared LinkedIn and Discord #showcase posts; publish, verify TinyFish mention and save post URLs.
+- [x] Owner approved publication of the reviewed `himanshu748/pageproof-seo-auditor` bundle.
+- [x] Public repository and demo verified: https://github.com/himanshu748/pageproof-seo-auditor
+- [x] Approved LinkedIn and TinyFish Discord #showcase posts published and verified; LinkedIn company mention and native demo confirmed.
 - [ ] Recheck open submission window immediately before submit. Exact launch/deadline was not displayed; do not infer it from the generic 18-day rule.
 - [ ] User approves final bounty submission; submit once and retain actual confirmation/status.
 
@@ -42,4 +42,9 @@ Permitted public HTTPS pages only; no credentials/query strings/fragments/privat
 
 The existing local lifetime allowance is now **4/4 used**. The fourth audit was specifically approved; no database reset, top-up or purchase occurred. Do not raise/reset the allowance or run another live audit without new explicit approval. Offline saved receipts and fixtures remain usable.
 
-No public repository, deployment, social post, claim or bounty submission was created in this preparation. No approval, points or payment is claimed.
+The preparation stage created no external publications. Subsequent approved publication created the public repository and required LinkedIn/Discord posts; see the links below. No deployment, bounty claim or final submission was made. No bounty approval, points or payment is claimed.
+
+Verified publication links (15 October):
+
+- LinkedIn: https://www.linkedin.com/feed/update/urn:li:activity:7516354219122065408/
+- TinyFish Discord #showcase: https://discord.com/channels/1200506685236711554/1554420983539048508/threads/1560144953877725196

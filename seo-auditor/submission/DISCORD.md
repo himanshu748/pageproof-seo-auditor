@@ -1,4 +1,4 @@
-# TinyFish Discord #showcase draft — not posted
+# TinyFish Discord #showcase post — published 15 October 2026
 
 **PageProof — SEO Page Auditor**
 
@@ -11,5 +11,4 @@ Demo: https://github.com/himanshu748/pageproof-seo-auditor/blob/codex/publicatio
 
 30 automated tests; genuine redacted receipts included. Permitted public HTTPS pages only, server-side key, bounded approved credits, zero retries. No audited website was modified.
 
----
-Post only to the TinyFish server's #showcase after user approval. Replace placeholders, attach the video and retain the message link. Do not publish this instruction block.
+Published and verified in Comet: https://discord.com/channels/1200506685236711554/1554420983539048508/threads/1560144953877725196

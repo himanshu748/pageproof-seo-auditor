@@ -1,11 +1,14 @@
-# Publication status
+# Verified publication receipts
 
-The user approved publishing this reviewed repository and the prepared LinkedIn/TinyFish Discord posts. Final bounty submission remains pending separate approval. Preparation reports retain their original dates and describe the state before publication.
+Published with the owner's explicit approval on 15 October 2026. Social posts were made and verified in Comet. **Final bounty submission remains pending separate owner approval.**
 
 - Repository: https://github.com/himanshu748/pageproof-seo-auditor
-- Demo: [actual browser walkthrough](seo-auditor/submission/PageProof-demo.mp4)
-- Source archive reviewed before publication: SHA-256 `2e5c5cc594bf086a95c162b37edbdf51cdb4197a27472bf5ced42631f20eac29`.
-- LinkedIn and TinyFish Discord #showcase links: publishing in progress.
-- Final bounty submission: pending owner approval; not submitted.
+- Reviewed app commit: `3501d9ac2019b293bff3f56bf206898137ecc020` on `codex/publication`.
+- Demo: [80-second actual-browser walkthrough](seo-auditor/submission/PageProof-demo.mp4). Public Git blob `0c423ae051d265da78403ad68070a372d49b12d1`, 2,710,804 bytes, matches the reviewed local video.
+- LinkedIn: https://www.linkedin.com/feed/update/urn:li:activity:7516354219122065408/ — published successfully, native demo visible, actual [TinyFish company mention](https://www.linkedin.com/company/tinyfish-ai/) verified.
+- TinyFish Discord #showcase: https://discord.com/channels/1200506685236711554/1554420983539048508/threads/1560144953877725196 — PageProof — SEO Page Auditor, App tag, posted by `himanshujha6005`, verified after creation.
+- Final bounty submission: **not submitted**. No bounty approval, points or payment is claimed.
 
-All application code, tests, fonts and genuine evidence are from the reviewed bundle. A root navigation README and these publication links were added. No API key, credential file, runtime budget database, dependency directory or unrelated project is included. Staged pattern scanning identified only the intentional offline UI token fixture; binary files are outside that pattern scan. The separate known-key byte scan found zero occurrences, including in local media/font files.
+The reviewed source archive SHA-256 is `2e5c5cc594bf086a95c162b37edbdf51cdb4197a27472bf5ced42631f20eac29`. Its packaged manifest describes the archive before publication. All application code, tests, fonts and genuine audit receipts retain their reviewed bytes; navigation and publication documents have since been updated with the verified links. Preparation records retain their original dates. Screenshots of social verification are retained locally, outside the public source checkout.
+
+No API key, credential file, runtime budget database, dependencies or unrelated project is included. Staged pattern scanning identified only the intentional offline UI token fixture; binary files are outside that pattern scan. The separate known-key byte scan found zero occurrences in the selected source, media and fonts. No additional TinyFish audit calls, purchases, top-ups or paid deployment were made for publication.

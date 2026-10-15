@@ -28,9 +28,9 @@ Keys remain server-side. Website text is inert evidence, reports escape content,
 
 ## Publication links
 
-- Working build: https://github.com/himanshu748/pageproof-seo-auditor (public repository created; source upload and verification in progress).
-- Demo: https://github.com/himanshu748/pageproof-seo-auditor/blob/codex/publication/seo-auditor/submission/PageProof-demo.mp4 (upload verification in progress).
-- LinkedIn post tagging TinyFish: NOT POSTED.
-- TinyFish Discord #showcase post: NOT POSTED.
+- Working build: https://github.com/himanshu748/pageproof-seo-auditor (public source and demo verified).
+- Demo: https://github.com/himanshu748/pageproof-seo-auditor/blob/codex/publication/seo-auditor/submission/PageProof-demo.mp4 (file size and Git blob hash match the reviewed demo).
+- LinkedIn post tagging TinyFish: https://www.linkedin.com/feed/update/urn:li:activity:7516354219122065408/ (published and verified; native demo attached).
+- TinyFish Discord #showcase post: https://discord.com/channels/1200506685236711554/1554420983539048508/threads/1560144953877725196 (published and verified).
 
-This is prepared copy, not a submission receipt. Do not submit with placeholders.
+Publications are verified. Final bounty submission has not been made and requires separate owner approval.

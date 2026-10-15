@@ -1,4 +1,4 @@
-# LinkedIn draft — not posted
+# LinkedIn post — published 15 October 2026
 
 I built PageProof for the TinyBounties SEO Page Auditor challenge.
 
@@ -15,5 +15,4 @@ Demo: https://github.com/himanshu748/pageproof-seo-auditor/blob/codex/publicatio
 
 #TinyFish #TinyBounties #SEO #BuildInPublic
 
----
-Publication instructions: select the actual TinyFish company mention (https://www.linkedin.com/company/tinyfish-ai/), replace the build placeholder only after publishing and verifying it, and attach the prepared video. Do not publish this instruction block. User approval is required.
+Published and verified in Comet: https://www.linkedin.com/feed/update/urn:li:activity:7516354219122065408/
