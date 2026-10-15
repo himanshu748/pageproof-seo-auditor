@@ -33,4 +33,6 @@ Keys remain server-side. Website text is inert evidence, reports escape content,
 - LinkedIn post tagging TinyFish: https://www.linkedin.com/feed/update/urn:li:activity:7516354219122065408/ (published and verified; native demo attached).
 - TinyFish Discord #showcase post: https://discord.com/channels/1200506685236711554/1554420983539048508/threads/1560144953877725196 (published and verified).
 
+- X: https://x.com/jhahimanshu653/status/2110603891473814010 (published and verified; @Tiny_Fish tag, repository/demo links and native demo attached).
+
 Publications are verified. Final bounty submission has not been made and requires separate owner approval.
