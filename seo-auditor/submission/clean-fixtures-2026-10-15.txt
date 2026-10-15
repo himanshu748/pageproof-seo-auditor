@@ -1,0 +1,13 @@
+
+> pageproof-seo@0.1.0 demo
+> node --import tsx scripts/demo.ts
+
+{"artifact":"fixture-valid","mode":"fixture","url":"https://example.com/valid","score":100,"coverage":100,"statuses":{"title":"pass","description":"pass","headings":"pass","canonical":"pass","robots":"pass","alt":"pass","og":"pass","structured":"pass","http":"pass","robots-txt":"pass","readability":"pass","visibility":"pass","links":"not tested"}}
+{"artifact":"fixture-flawed","mode":"fixture","url":"https://example.com/flawed","score":39,"coverage":100,"statuses":{"title":"warning","description":"fail","headings":"fail","canonical":"fail","robots":"warning","alt":"fail","og":"warning","structured":"warning","http":"pass","robots-txt":"pass","readability":"pass","visibility":"pass","links":"not tested"}}
+{"artifact":"fixture-malformed","mode":"fixture","url":"https://example.com/malformed","score":75,"coverage":100,"statuses":{"title":"pass","description":"fail","headings":"pass","canonical":"warning","robots":"pass","alt":"pass","og":"warning","structured":"fail","http":"pass","robots-txt":"pass","readability":"pass","visibility":"pass","links":"not tested"}}
+{"artifact":"fixture-blocked","mode":"fixture","url":"https://example.com/blocked","score":null,"coverage":0,"statuses":{"title":"not tested","description":"not tested","headings":"not tested","canonical":"not tested","robots":"not tested","alt":"not tested","og":"not tested","structured":"not tested","http":"not tested","robots-txt":"pass","readability":"not tested","visibility":"not tested","links":"not tested"}}
+{"artifact":"fixture-timeout","mode":"fixture","url":"https://example.com/timeout","score":null,"coverage":0,"statuses":{"title":"not tested","description":"not tested","headings":"not tested","canonical":"not tested","robots":"not tested","alt":"not tested","og":"not tested","structured":"not tested","http":"not tested","robots-txt":"pass","readability":"not tested","visibility":"not tested","links":"not tested"}}
+{"artifact":"fixture-redirect","mode":"fixture","url":"https://example.com/redirect","score":100,"coverage":100,"statuses":{"title":"pass","description":"pass","headings":"pass","canonical":"pass","robots":"pass","alt":"pass","og":"pass","structured":"pass","http":"pass","robots-txt":"pass","readability":"pass","visibility":"pass","links":"not tested"}}
+SYNTHETIC FIXTURES ONLY. TinyFish was not called.
+(node:4061) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)

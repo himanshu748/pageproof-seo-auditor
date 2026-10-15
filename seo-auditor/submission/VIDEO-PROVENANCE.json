@@ -1,0 +1,139 @@
+{
+  "format": "Edited actual-browser-capture walkthrough, not continuous recording",
+  "capturedOn": "2026-10-14",
+  "freshReceipt": "live-30d81fb2-00c4-4973-987b-a4bd13db75f1.json",
+  "actualFreshAuditElapsedSeconds": 40.169,
+  "waitingTrimmed": true,
+  "syntheticClicks": false,
+  "overlays": "Explanatory captions only. No fabricated browser content.",
+  "canvas": [
+    1440,
+    1080
+  ],
+  "fps": 60,
+  "durationSeconds": 80,
+  "scenes": [
+    {
+      "startSeconds": 0,
+      "durationSeconds": 7,
+      "source": "captures/01-input.jpg",
+      "sourceSize": [
+        668,
+        827
+      ],
+      "sourceSha256": "2619ef0244314f04ca30aee81aad2ae8c2804b0f4e9132d3c76695787f65df22",
+      "label": "FRESH AUDIT \u00b7 14 OCTOBER",
+      "caption": "Enter a permitted HTTPS URL. An optional query controls the Search observation. Secrets stay on the server."
+    },
+    {
+      "startSeconds": 7,
+      "durationSeconds": 5,
+      "source": "captures/02-running.jpg",
+      "sourceSize": [
+        668,
+        827
+      ],
+      "sourceSha256": "e2bbaadabf20b094e66007fe6cb43e7de6ecc8b3b6aad099304735cb0a89b165",
+      "label": "FRESH AUDIT \u00b7 WAIT TRIMMED",
+      "caption": "One Search, one live Fetch and one short Browser session. Existing approved credits only. No retries or top-ups."
+    },
+    {
+      "startSeconds": 12,
+      "durationSeconds": 9,
+      "source": "captures/11-fresh-score.jpg",
+      "sourceSize": [
+        668,
+        827
+      ],
+      "sourceSha256": "6f9224b4693099aa4940eae5f6df13f9e09166a7ae66c9082e17b2b1bbed8e63",
+      "label": "FRESH AUDIT \u00b7 14 OCTOBER",
+      "caption": "Ten scored checks measured. Six requests were blocked by the safety policy, so rendering is limited. This is page hygiene, not a ranking score."
+    },
+    {
+      "startSeconds": 21,
+      "durationSeconds": 9,
+      "source": "captures/04-fetch-evidence.jpg",
+      "sourceSize": [
+        668,
+        827
+      ],
+      "sourceSha256": "89279d6fd3e19d347bdb58ee80c28aae283ac4366eb97a3526ff2cdf8260f77b",
+      "label": "FRESH AUDIT \u00b7 TINYFISH FETCH",
+      "caption": "Fetch returned 10,724 characters. The exact excerpt and title/H1 phrase checks show what the extraction contains. Website instructions remain inert evidence."
+    },
+    {
+      "startSeconds": 30,
+      "durationSeconds": 9,
+      "source": "captures/05-search-evidence.jpg",
+      "sourceSize": [
+        668,
+        827
+      ],
+      "sourceSha256": "98bbd92aac6a82d98298bcb95ccd0c71f75c6872b3bcda7575f814a2d90ba8f9",
+      "label": "FRESH AUDIT \u00b7 TINYFISH SEARCH",
+      "caption": "Returned links and snippets show how this provider describes the page. An exact URL match is an observation; Google rankings and indexing are not measured."
+    },
+    {
+      "startSeconds": 39,
+      "durationSeconds": 8,
+      "source": "captures/06-dom-evidence.jpg",
+      "sourceSize": [
+        668,
+        827
+      ],
+      "sourceSha256": "f1fdab71ea11af51429dca58dd015cefdc7ab55b764e0bedcb936690301d833e",
+      "label": "FRESH AUDIT \u00b7 TINYFISH BROWSER",
+      "caption": "Browser CDP supplies DOM and actual HTTP evidence. JSON-LD syntax and basic shape are checked. Schema semantics and rich-result eligibility remain untested."
+    },
+    {
+      "startSeconds": 47,
+      "durationSeconds": 9,
+      "source": "captures/07-example-saved-receipt.jpg",
+      "sourceSize": [
+        668,
+        827
+      ],
+      "sourceSha256": "ad96f0ac874567163eb393e96a64b19399c50e9aaccd3139043ff9ef6cbc2bdf",
+      "label": "SAVED LIVE RECEIPT \u00b7 12 OCTOBER",
+      "caption": "Example Domain scored 59/100: missing description and H1. Prioritized fixes tell the owner what to change. This saved receipt makes no new API calls."
+    },
+    {
+      "startSeconds": 56,
+      "durationSeconds": 7,
+      "source": "captures/08-search-unknown.jpg",
+      "sourceSize": [
+        668,
+        827
+      ],
+      "sourceSha256": "9914a8622bba09b2640adf01862b65715097a58cc7946dd20bf45ad346479254",
+      "label": "SAVED LIVE RECEIPT \u00b7 12 OCTOBER",
+      "caption": "The TinyFish homepage audit retained its Search failure as not tested. Failed measurements are never replaced with fixtures or scored as success."
+    },
+    {
+      "startSeconds": 63,
+      "durationSeconds": 8,
+      "source": "captures/09-malformed-fixture.jpg",
+      "sourceSize": [
+        668,
+        827
+      ],
+      "sourceSha256": "a822aa257d29b57f5c467515d91e6abb9e8047957080ef92dac6de26a0824544",
+      "label": "SYNTHETIC FIXTURE \u00b7 NO API CALL",
+      "caption": "Invalid JSON and non-object blocks produce a failure with precise evidence and a repair. Valid, flawed, blocked, redirect and timeout fixtures are also tested."
+    },
+    {
+      "startSeconds": 71,
+      "durationSeconds": 9,
+      "source": "captures/12-score-formula.jpg",
+      "sourceSize": [
+        668,
+        827
+      ],
+      "sourceSha256": "d0a0cf305c0ef66511330026e91092e2f5cfe0b55decd809e65880444f26b1aa",
+      "label": "FORMULA FROM FRESH LIVE REPORT",
+      "caption": "Weighted pass = 1, warning = 0.5, fail = 0. Unknown checks are excluded; coverage is separate. Download HTML or JSON. No audited website was modified."
+    }
+  ],
+  "sourceRenderFps": 1,
+  "frameDuplication": "Static screenshot scenes rendered at 1 fps and encoded at 60 fps; not native 60 fps screen recording."
+}

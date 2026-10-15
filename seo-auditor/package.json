@@ -1,0 +1,31 @@
+{
+  "name": "pageproof-seo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "dev": "node --import tsx src/server.ts",
+    "build": "tsc",
+    "start": "node dist/src/server.js",
+    "check": "tsc --noEmit",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "demo": "node --import tsx scripts/demo.ts",
+    "demo:live": "node --import tsx scripts/demo.ts --live",
+    "preflight": "node --import tsx scripts/preflight.ts"
+  },
+  "dependencies": {
+    "@tiny-fish/sdk": "0.8.0",
+    "cheerio": "1.1.2",
+    "dotenv": "18.0.7",
+    "ipaddr.js": "2.5.0",
+    "playwright": "1.64.0"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15",
+    "typescript": "6.0.3"
+  }
+}

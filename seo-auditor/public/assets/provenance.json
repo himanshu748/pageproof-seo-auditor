@@ -1,0 +1,19 @@
+{
+  "retrievedFor": "local PageProof UI; no runtime third-party font request",
+  "assets": [
+    {
+      "family": "Public Sans",
+      "file": "public-sans.woff2",
+      "source": "https://fonts.gstatic.com/s/publicsans/v21/ijwRs572Xtc6ZYQws9YVwnNGfJ7QwOk1.woff2",
+      "bytes": 26636,
+      "license": "SIL Open Font License 1.1"
+    },
+    {
+      "family": "Space Grotesk",
+      "file": "space-grotesk.woff2",
+      "source": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4C_k3HqU.woff2",
+      "bytes": 22320,
+      "license": "SIL Open Font License 1.1"
+    }
+  ]
+}

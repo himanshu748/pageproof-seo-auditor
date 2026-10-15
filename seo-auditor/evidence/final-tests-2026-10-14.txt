@@ -1,0 +1,46 @@
+
+> pageproof-seo@0.1.0 test
+> node --import tsx --test tests/*.test.ts
+
+✔ valid page passes DOM hygiene; computed score and coverage are transparent (170.827833ms)
+✔ flawed fixture produces actionable evidence with fail/warning per check (45.260667ms)
+✔ malformed JSON-LD fails parsing and does not execute website instructions (7.633833ms)
+✔ blocked/timeouts never turn missing DOM into failures or a score (2.51425ms)
+✔ redirect fixture distinguishes preflight HEAD from actual Browser GET (7.146083ms)
+✔ not-tested and zero-weight Search observations cannot change scoring (2.932625ms)
+✔ HTML export escapes malicious content and has no executing report script (4.921542ms)
+✔ known API key and common sensitive URL values are redacted (3.730833ms)
+✔ query and permission validation rejects unsafe input (0.790958ms)
+✔ SSRF rejects credentials, private hosts, non-HTTPS, fragments, query and ports (4.150875ms)
+✔ mixed DNS and mapped/reserved IPs are blocked; public v4/v6 allowed (6.925584ms)
+✔ same-origin redirects verified before subsequent retrieval (2.957208ms)
+✔ cross-origin/private redirect and redirect loops fail before a destination GET (3.94925ms)
+✔ robots longest rule, grouped agents, disallow, malformed and 404 policies (1.521ms)
+✔ retrieval timeout is honest and robots unknown stays unknown (0.828084ms)
+✔ official Fetch uses documented route, live markdown, bounded timeout and no retries (251.276041ms)
+✔ provider denial, timeout and rate limiting are not retried or reported as page absence (8.480042ms)
+(node:25379) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ local API enforces Host Origin token and supports genuine partial errors and safe downloads (353.016875ms)
+(node:25380) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ no provider calls before approval and permission (72.21925ms)
+✔ wallet reload/pending balance/unknown rates gates fail closed (4.672208ms)
+✔ durable budget survives restart and duplicate reservation cannot spend twice (28.945ms)
+✔ failed and timed-out provider calls consume budget and produce partial reports (111.535125ms)
+✔ robots denial never calls Fetch or Browser and still reports Search observations (44.537084ms)
+✔ Fetch access denial never escalates to Browser (5.932ms)
+✔ concurrent requests cannot pass the active guard while DNS is pending (11.043417ms)
+✔ reduced motion keeps content available and disables entrance animation (31.117ms)
+✔ switching to reduced motion cancels running entrance animations (6.141084ms)
+✔ a failed receipt request shows an error and preserves previous report contents (160.897208ms)
+✔ saved synthetic response is labeled and never becomes a live measurement (18.312208ms)
+✔ unreadable server responses leave an actionable unavailable state (3.74ms)
+ℹ tests 30
+ℹ suites 0
+ℹ pass 30
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3284.402125

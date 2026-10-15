@@ -1,0 +1,311 @@
+{
+  "version": 1,
+  "id": "85c7a01e-c421-4f04-a4e8-a4f3ccc13639",
+  "mode": "live",
+  "url": "https://example.com/",
+  "observedAt": "2026-10-12T16:54:10.490Z",
+  "query": "https://example.com/",
+  "findings": [
+    {
+      "id": "title",
+      "name": "Page title",
+      "status": "warning",
+      "weight": 3,
+      "evidence": "head title count: 1; \"Example Domain\" (14 characters). 30–60 characters is a display heuristic, not a Google requirement.",
+      "impact": "A descriptive unique title helps readers and search tools identify the page.",
+      "fix": "Review whether the title clearly describes the page. Aim around 30–60 characters where natural; length alone does not predict ranking.",
+      "source": "TinyFish Browser rendered DOM"
+    },
+    {
+      "id": "description",
+      "name": "Meta description",
+      "status": "fail",
+      "weight": 2,
+      "evidence": "meta[name=description] count: 0; \"\" (0 characters). 70–160 characters is a heuristic; search snippets are not guaranteed.",
+      "impact": "A clear summary can help tools describe this page; displayed snippets may differ.",
+      "fix": "Add one unique <meta name=\"description\" content=\"…\"> in <head>.",
+      "source": "TinyFish Browser rendered DOM"
+    },
+    {
+      "id": "headings",
+      "name": "Heading structure",
+      "status": "fail",
+      "weight": 3,
+      "evidence": "0 DOM headings; H1 count 0; skipped levels false; empty headings false. []",
+      "impact": "Headings help readers and extraction tools follow the content hierarchy.",
+      "fix": "Use one clear H1 and ordered H2/H3 sections without skipping levels.",
+      "source": "TinyFish Browser rendered DOM"
+    },
+    {
+      "id": "canonical",
+      "name": "Canonical URL",
+      "status": "warning",
+      "weight": 2,
+      "evidence": "Missing canonical.",
+      "impact": "An unambiguous canonical can help consolidate duplicate page signals.",
+      "fix": "Add one absolute HTTPS <link rel=\"canonical\" href=\"…\"> in <head>, pointing to your preferred public page.",
+      "source": "TinyFish Browser rendered DOM"
+    },
+    {
+      "id": "robots",
+      "name": "Robots directives",
+      "status": "pass",
+      "weight": 3,
+      "evidence": "No robots meta found in DOM; X-Robots-Tag absent in retrieved main-document response. Default crawler behavior may apply; indexing not verified.",
+      "impact": "Noindex/nofollow directives affect crawler treatment when honored; indexing itself is unmeasured.",
+      "fix": "Review meta robots and X-Robots-Tag; remove restrictive directives only if this page should be discoverable.",
+      "source": "TinyFish Browser rendered DOM"
+    },
+    {
+      "id": "alt",
+      "name": "Image alt text",
+      "status": "pass",
+      "weight": 2,
+      "evidence": "0 DOM img elements; missing alt: 0; explicit empty alt: 0. []. No img elements; other image forms unmeasured.",
+      "impact": "Useful alt text gives image meaning to screen readers and text extraction tools.",
+      "fix": "Add concise purpose-based alt text to informative images; keep alt=\"\" only for decorative images.",
+      "source": "TinyFish Browser rendered DOM"
+    },
+    {
+      "id": "og",
+      "name": "Open Graph metadata",
+      "status": "warning",
+      "weight": 1,
+      "evidence": "{\"title\":\"\",\"description\":\"\",\"type\":\"\",\"image\":\"\"}. Missing fields: title, description, type, image. Image URL syntax safe: true; image not downloaded.",
+      "impact": "Social and AI tools may use metadata for a consistent page summary.",
+      "fix": "Set og:title, og:description, og:type and a public absolute HTTPS og:image in <head>.",
+      "source": "TinyFish Browser rendered DOM"
+    },
+    {
+      "id": "structured",
+      "name": "Structured data",
+      "status": "warning",
+      "weight": 2,
+      "evidence": "0 JSON-LD blocks; no parse errors; no basic shape warnings; types []; 0 microdata/RDFa candidate elements (not parsed). Syntax and basic presence only; schema semantics and rich-result eligibility not tested.",
+      "impact": "Machine-readable entities can help tools understand content. Presence does not guarantee rich results.",
+      "fix": "Add page-appropriate JSON-LD with @context and @type; validate syntax and review schema.org semantics separately.",
+      "source": "TinyFish Browser rendered DOM"
+    },
+    {
+      "id": "http",
+      "name": "HTTP status",
+      "status": "pass",
+      "weight": 2,
+      "evidence": "Actual TinyFish Browser main-document GET status 200; final URL https://example.com/; redirects [].",
+      "impact": "Successful HTTP responses let tools retrieve content.",
+      "fix": "Return a successful public main-document response; investigate observed errors or unintended redirects.",
+      "source": "TinyFish Browser network response"
+    },
+    {
+      "id": "robots-txt",
+      "name": "robots.txt policy",
+      "status": "pass",
+      "weight": 0,
+      "evidence": "Actually retrieved https://example.com/robots.txt; HTTP 404; no text response. Local policy result allowed (wildcard/PageProof/TinyFish groups).",
+      "impact": "Crawler restrictions may prevent tool access; policy does not prove indexing.",
+      "fix": "Review robots.txt rules with the site owner; do not bypass a denial.",
+      "source": "Local pinned HTTPS GET"
+    },
+    {
+      "id": "readability",
+      "name": "AI extraction readability",
+      "status": "pass",
+      "weight": 2,
+      "evidence": "TinyFish Fetch returned 156 characters (excerpt complete). The 100-character warning threshold is a heuristic, not an understanding/SEO guarantee. \"Example Domain\": not present in Fetch text. Excerpt: This domain is for use in documentation examples without needing permission. This is not a service; avoid relying on it for testing and monitoring purposes.",
+      "impact": "Text available to Fetch can be consumed by extraction tools; semantic understanding and visibility are not proven.",
+      "fix": "Keep primary content as accessible text. Compare the excerpt to the intended summary; ensure important headings/content are included without login or canvas-only rendering.",
+      "source": "TinyFish Fetch markdown, ttl=0"
+    },
+    {
+      "id": "visibility",
+      "name": "Search visibility observation",
+      "status": "pass",
+      "weight": 0,
+      "evidence": "TinyFish Search query \"https://example.com/\", US/en, first response page; 10 results returned; exact page matches 1. [{\"url\":\"https://example.com/\",\"title\":\"Example Domain\",\"snippet\":\"Данный домен предназначен для использования в примерах документации без необходимости получения предварительного разрешения. Это не сервис; не рекомендуется его ...\"},{\"url\":\"https://en.wikipedia.org/wiki/Example.com\",\"title\":\"example.com\",\"snippet\":\"The domain names example.com, example.net, example.org, and example.edu are second-level domain names in the Domain Name System of the Internet.\"},{\"url\":\"https://webmasters.stackexchange.com/questions/6107/www-example-com-or-http-example-com-which-one-is-futureproof\",\"title\":\"WWW.example.com or HTTP://example.com – which one is ...\",\"snippet\":\"http://example.com www.example.com http://www.example.com example.com Which of these would you choose as your favourite to work with from 2016 onward? ...\"},{\"url\":\"https://www.instagram.com/reel/C9KcmCcg5Rw/\",\"title\":\"Save this for your next tech interview ...\",\"snippet\":\"The browser uses DNS lookup, which acts like a translator, to find the domain's IP address ✨ example.com (readable by humans)\"},{\"url\":\"https://stackoverflow.com/questions/43882712/how-do-you-redirect-a-bare-example-com-domain-to-https-example-com\",\"title\":\"How do you redirect a bare \\\"example.com\\\" domain to \\\"https ...\",\"snippet\":\"Title really says it all. I cannot get my domain to redirect from site.com to http://example.com but https://example.com works as well as https://www.example.co ...\"},{\"url\":\"https://github.com/mdn/content/issues/39865\",\"title\":\"example.com is a better choice for an example domain\",\"snippet\":\"It's a bit unfortunate here, because http://example.com does not redirect to https://example.com :(. caugner commented on Jun 10, 2025.\"},{\"url\":\"https://news.ycombinator.com/item?id=29623646\",\"title\":\"Example Domain\",\"snippet\":\"The advantage of example.com is that its still served over HTTP, which is very helpful if you are trying to force a redirect for wifi login ...\"},{\"url\":\"https://blog.cloudflare.com/typo-traps-analyzing-traffic-to-exmaple-com-or-is-it-example-com/\",\"title\":\"Typo traps: analyzing traffic to exmaple.com (or is it ...\",\"snippet\":\"Cloudflare has owned exmaple.com for a few years now, but don't confuse it with example.com! example.com is a reserved domain name set by the ...\"},{\"url\":\"https://www.iana.org/help/example-domains\",\"title\":\"Example Domains\",\"snippet\":\"We provide a web service on the example domain hosts to provide basic information on the purpose of the domain. These web services are provided ...\"},{\"url\":\"https://www.reddit.com/r/webdev/comments/mld1fu/knowledge_nugget_examplecom/\",\"title\":\"knowledge nugget: example.com : r/webdev\",\"snippet\":\"Using @example.com is good as a no risk no hassle naming convention. It also makes it abundantly clear (to any dev) for testing & development ...\"}]. No Google rank/index status inferred from presence or absence.",
+      "impact": "Query results and snippets show how this provider describes content at this moment; they cannot establish overall search visibility or causation.",
+      "fix": "Compare returned snippets with your intended title/summary. If this page is absent, try a relevant target query and review readability/content; absence in one query is not evidence of deindexing.",
+      "source": "TinyFish Search response (not a Google measurement)"
+    },
+    {
+      "id": "links",
+      "name": "Same-origin link health",
+      "status": "not tested",
+      "weight": 0,
+      "evidence": "Optional link checks disabled; zero links requested.",
+      "impact": "Broken destination links can hurt navigation.",
+      "fix": "If needed, run a separately authorized bounded check of up to ten same-origin links.",
+      "source": "No retrieval"
+    }
+  ],
+  "score": {
+    "value": 59,
+    "earned": 13,
+    "available": 22,
+    "measured": 10,
+    "total": 10,
+    "coverage": 100,
+    "formula": "round(100 × Σ(weight × value) / Σ(measured weight)); pass=1, warning=0.5, fail=0. Not tested and weight=0 observations excluded. Coverage = measured scored checks / all scored checks. This is a page hygiene heuristic, not a Google or ranking score."
+  },
+  "priorities": [
+    {
+      "id": "headings",
+      "name": "Heading structure",
+      "status": "fail",
+      "weight": 3,
+      "evidence": "0 DOM headings; H1 count 0; skipped levels false; empty headings false. []",
+      "impact": "Headings help readers and extraction tools follow the content hierarchy.",
+      "fix": "Use one clear H1 and ordered H2/H3 sections without skipping levels.",
+      "source": "TinyFish Browser rendered DOM"
+    },
+    {
+      "id": "description",
+      "name": "Meta description",
+      "status": "fail",
+      "weight": 2,
+      "evidence": "meta[name=description] count: 0; \"\" (0 characters). 70–160 characters is a heuristic; search snippets are not guaranteed.",
+      "impact": "A clear summary can help tools describe this page; displayed snippets may differ.",
+      "fix": "Add one unique <meta name=\"description\" content=\"…\"> in <head>.",
+      "source": "TinyFish Browser rendered DOM"
+    },
+    {
+      "id": "title",
+      "name": "Page title",
+      "status": "warning",
+      "weight": 3,
+      "evidence": "head title count: 1; \"Example Domain\" (14 characters). 30–60 characters is a display heuristic, not a Google requirement.",
+      "impact": "A descriptive unique title helps readers and search tools identify the page.",
+      "fix": "Review whether the title clearly describes the page. Aim around 30–60 characters where natural; length alone does not predict ranking.",
+      "source": "TinyFish Browser rendered DOM"
+    },
+    {
+      "id": "canonical",
+      "name": "Canonical URL",
+      "status": "warning",
+      "weight": 2,
+      "evidence": "Missing canonical.",
+      "impact": "An unambiguous canonical can help consolidate duplicate page signals.",
+      "fix": "Add one absolute HTTPS <link rel=\"canonical\" href=\"…\"> in <head>, pointing to your preferred public page.",
+      "source": "TinyFish Browser rendered DOM"
+    },
+    {
+      "id": "structured",
+      "name": "Structured data",
+      "status": "warning",
+      "weight": 2,
+      "evidence": "0 JSON-LD blocks; no parse errors; no basic shape warnings; types []; 0 microdata/RDFa candidate elements (not parsed). Syntax and basic presence only; schema semantics and rich-result eligibility not tested.",
+      "impact": "Machine-readable entities can help tools understand content. Presence does not guarantee rich results.",
+      "fix": "Add page-appropriate JSON-LD with @context and @type; validate syntax and review schema.org semantics separately.",
+      "source": "TinyFish Browser rendered DOM"
+    }
+  ],
+  "observations": {
+    "preflight": {
+      "url": "https://example.com/",
+      "chain": [
+        {
+          "url": "https://example.com/",
+          "status": 200
+        }
+      ],
+      "robots": {
+        "url": "https://example.com/robots.txt",
+        "status": 404,
+        "text": null,
+        "allowed": true
+      }
+    },
+    "search": {
+      "ok": true,
+      "data": {
+        "query": "https://example.com/",
+        "results": [
+          {
+            "url": "https://example.com/",
+            "title": "Example Domain",
+            "snippet": "Данный домен предназначен для использования в примерах документации без необходимости получения предварительного разрешения. Это не сервис; не рекомендуется его ..."
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Example.com",
+            "title": "example.com",
+            "snippet": "The domain names example.com, example.net, example.org, and example.edu are second-level domain names in the Domain Name System of the Internet."
+          },
+          {
+            "url": "https://webmasters.stackexchange.com/questions/6107/www-example-com-or-http-example-com-which-one-is-futureproof",
+            "title": "WWW.example.com or HTTP://example.com – which one is ...",
+            "snippet": "http://example.com www.example.com http://www.example.com example.com Which of these would you choose as your favourite to work with from 2016 onward? ..."
+          },
+          {
+            "url": "https://www.instagram.com/reel/C9KcmCcg5Rw/",
+            "title": "Save this for your next tech interview ...",
+            "snippet": "The browser uses DNS lookup, which acts like a translator, to find the domain's IP address ✨ example.com (readable by humans)"
+          },
+          {
+            "url": "https://stackoverflow.com/questions/43882712/how-do-you-redirect-a-bare-example-com-domain-to-https-example-com",
+            "title": "How do you redirect a bare \"example.com\" domain to \"https ...",
+            "snippet": "Title really says it all. I cannot get my domain to redirect from site.com to http://example.com but https://example.com works as well as https://www.example.co ..."
+          },
+          {
+            "url": "https://github.com/mdn/content/issues/39865",
+            "title": "example.com is a better choice for an example domain",
+            "snippet": "It's a bit unfortunate here, because http://example.com does not redirect to https://example.com :(. caugner commented on Jun 10, 2025."
+          },
+          {
+            "url": "https://news.ycombinator.com/item?id=29623646",
+            "title": "Example Domain",
+            "snippet": "The advantage of example.com is that its still served over HTTP, which is very helpful if you are trying to force a redirect for wifi login ..."
+          },
+          {
+            "url": "https://blog.cloudflare.com/typo-traps-analyzing-traffic-to-exmaple-com-or-is-it-example-com/",
+            "title": "Typo traps: analyzing traffic to exmaple.com (or is it ...",
+            "snippet": "Cloudflare has owned exmaple.com for a few years now, but don't confuse it with example.com! example.com is a reserved domain name set by the ..."
+          },
+          {
+            "url": "https://www.iana.org/help/example-domains",
+            "title": "Example Domains",
+            "snippet": "We provide a web service on the example domain hosts to provide basic information on the purpose of the domain. These web services are provided ..."
+          },
+          {
+            "url": "https://www.reddit.com/r/webdev/comments/mld1fu/knowledge_nugget_examplecom/",
+            "title": "knowledge nugget: example.com : r/webdev",
+            "snippet": "Using @example.com is good as a no risk no hassle naming convention. It also makes it abundantly clear (to any dev) for testing & development ..."
+          }
+        ],
+        "returned": 10,
+        "location": "US",
+        "language": "en"
+      }
+    },
+    "fetch": {
+      "ok": true,
+      "data": {
+        "finalUrl": "https://example.com/",
+        "text": "This domain is for use in documentation examples without needing permission. This is not a service; avoid relying on it for testing and monitoring purposes.",
+        "characters": 156,
+        "truncated": false,
+        "title": "Example Domain"
+      }
+    },
+    "dom": {
+      "ok": true,
+      "data": {
+        "finalUrl": "https://example.com/",
+        "status": 200,
+        "redirects": [],
+        "xRobotsTag": null,
+        "limited": false,
+        "blockedRequests": 0,
+        "settle": "network-idle",
+        "cleanup": "confirmed"
+      }
+    }
+  },
+  "limits": [
+    "Single page and bounded rendered snapshot only; length thresholds and scoring are heuristics.",
+    "No Google rankings, indexing status, traffic, backlinks, Lighthouse scores or Core Web Vitals measured.",
+    "Search presence/absence is one provider query observation, excluded from scoring; no causal ranking claim.",
+    "JSON-LD syntax/presence only, not schema.org validation, factual accuracy or rich-result eligibility.",
+    "Remote TinyFish Fetch independently resolves/follows redirects; DNS/redirect safety there is a provider trust boundary. Local requests are pinned; Browser routes validate but cannot pin remote DNS.",
+    "Browser GET-only filtering, request cap and settling deadline can limit rendering; inaccessible DOM checks stay not tested.",
+    "No optional link requests, authentication, interactive actions, writes or audited-site modifications."
+  ]
+}

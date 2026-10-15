@@ -1,0 +1,260 @@
+{
+  "version": 1,
+  "id": "ca03cd02-b235-4186-b42b-386c34e98d7a",
+  "mode": "live",
+  "url": "https://docs.tinyfish.ai/for-coding-agents",
+  "observedAt": "2026-10-12T16:55:22.508Z",
+  "query": "https://docs.tinyfish.ai/for-coding-agents",
+  "findings": [
+    {
+      "id": "title",
+      "name": "Page title",
+      "status": "pass",
+      "weight": 3,
+      "evidence": "head title count: 1; \"For Coding Agents - TinyFish Web Agent\" (38 characters). 30–60 characters is a display heuristic, not a Google requirement.",
+      "impact": "A descriptive unique title helps readers and search tools identify the page.",
+      "fix": "Keep this descriptive title unique as content changes.",
+      "source": "TinyFish Browser rendered DOM"
+    },
+    {
+      "id": "description",
+      "name": "Meta description",
+      "status": "pass",
+      "weight": 2,
+      "evidence": "meta[name=description] count: 1; \"Single-page TinyFish context for Claude, Codex, Cursor, and other coding agents\" (79 characters). 70–160 characters is a heuristic; search snippets are not guaranteed.",
+      "impact": "A clear summary can help tools describe this page; displayed snippets may differ.",
+      "fix": "Keep this description accurate and unique.",
+      "source": "TinyFish Browser rendered DOM"
+    },
+    {
+      "id": "headings",
+      "name": "Heading structure",
+      "status": "pass",
+      "weight": 3,
+      "evidence": "42 DOM headings; H1 count 1; skipped levels false; empty headings false. [{\"level\":2,\"value\":\"Documentation Index\"},{\"level\":3,\"value\":\"Start Here\"},{\"level\":3,\"value\":\"Agent API\"},{\"level\":3,\"value\":\"Search API\"},{\"level\":3,\"value\":\"Monitor\"},{\"level\":3,\"value\":\"Fetch API\"},{\"level\":3,\"value\":\"Browser API\"},{\"level\":3,\"value\":\"Research API (Beta)\"},{\"level\":3,\"value\":\"Capabilities\"},{\"level\":3,\"value\":\"Tools & Integrations\"},{\"level\":3,\"value\":\"Guides\"},{\"level\":3,\"value\":\"Use Cases\"},{\"level\":3,\"value\":\"Reference\"},{\"level\":2,\"value\":\"On this page\"},{\"level\":1,\"value\":\"For Coding Agents\"},{\"level\":2,\"value\":\"​MCP Server (Recommended for AI Assistants)\"},{\"level\":2,\"value\":\"​Install the SDK\"},{\"level\":2,\"value\":\"​Authentication\"},{\"level\":2,\"value\":\"​Choose the Right TinyFish API\"},{\"level\":3,\"value\":\"​Quick Decision Tree\"},{\"level\":2,\"value\":\"​Authenticated or Recurring Runs\"},{\"level\":2,\"value\":\"​SDK Examples\"},{\"level\":3,\"value\":\"​Agent — Streaming (Recommended)\"},{\"level\":3,\"value\":\"​Agent — Synchronous\"},{\"level\":3,\"value\":\"​Search\"}]",
+      "impact": "Headings help readers and extraction tools follow the content hierarchy.",
+      "fix": "Use one clear H1 and ordered H2/H3 sections without skipping levels.",
+      "source": "TinyFish Browser rendered DOM"
+    },
+    {
+      "id": "canonical",
+      "name": "Canonical URL",
+      "status": "pass",
+      "weight": 2,
+      "evidence": "[\"https://docs.tinyfish.ai/for-coding-agents\"]; resolved https://docs.tinyfish.ai/for-coding-agents. Destination not fetched; canonical indexing/selection unmeasured.",
+      "impact": "An unambiguous canonical can help consolidate duplicate page signals.",
+      "fix": "Add one absolute HTTPS <link rel=\"canonical\" href=\"…\"> in <head>, pointing to your preferred public page.",
+      "source": "TinyFish Browser rendered DOM"
+    },
+    {
+      "id": "robots",
+      "name": "Robots directives",
+      "status": "pass",
+      "weight": 3,
+      "evidence": "No robots meta found in DOM; X-Robots-Tag absent in retrieved main-document response. Default crawler behavior may apply; indexing not verified.",
+      "impact": "Noindex/nofollow directives affect crawler treatment when honored; indexing itself is unmeasured.",
+      "fix": "Review meta robots and X-Robots-Tag; remove restrictive directives only if this page should be discoverable.",
+      "source": "TinyFish Browser rendered DOM"
+    },
+    {
+      "id": "alt",
+      "name": "Image alt text",
+      "status": "pass",
+      "weight": 2,
+      "evidence": "2 DOM img elements; missing alt: 0; explicit empty alt: 0. []. CSS/background/SVG/canvas images unmeasured; decorative intent not inferred.",
+      "impact": "Useful alt text gives image meaning to screen readers and text extraction tools.",
+      "fix": "Add concise purpose-based alt text to informative images; keep alt=\"\" only for decorative images.",
+      "source": "TinyFish Browser rendered DOM"
+    },
+    {
+      "id": "og",
+      "name": "Open Graph metadata",
+      "status": "pass",
+      "weight": 1,
+      "evidence": "{\"title\":\"For Coding Agents - TinyFish Web Agent\",\"description\":\"Single-page TinyFish context for Claude, Codex, Cursor, and other coding agents\",\"type\":\"website\",\"image\":\"https://tinyfish.mintlify.app/_mintlify/api/og/v2?division=Start+Here&title=For+Coding+Agents&description=Single-page+TinyFish+context+for+Claude%2C+Codex%2C+Cursor%2C+and+other+coding+agents&theme=59891238df962a600b407092&signature=851b42e548fd67587882449d286250f8fb604ee9afa8ad154e34d026b2a4b5b0\"}. Missing fields: none. Image URL syntax safe: true; image not downloaded.",
+      "impact": "Social and AI tools may use metadata for a consistent page summary.",
+      "fix": "Set og:title, og:description, og:type and a public absolute HTTPS og:image in <head>.",
+      "source": "TinyFish Browser rendered DOM"
+    },
+    {
+      "id": "structured",
+      "name": "Structured data",
+      "status": "pass",
+      "weight": 2,
+      "evidence": "2 JSON-LD blocks; no parse errors; no basic shape warnings; types [\"\\\"WebSite\\\"\"]; 0 microdata/RDFa candidate elements (not parsed). Syntax and basic presence only; schema semantics and rich-result eligibility not tested.",
+      "impact": "Machine-readable entities can help tools understand content. Presence does not guarantee rich results.",
+      "fix": "Add page-appropriate JSON-LD with @context and @type; validate syntax and review schema.org semantics separately.",
+      "source": "TinyFish Browser rendered DOM"
+    },
+    {
+      "id": "http",
+      "name": "HTTP status",
+      "status": "pass",
+      "weight": 2,
+      "evidence": "Actual TinyFish Browser main-document GET status 200; final URL https://docs.tinyfish.ai/for-coding-agents; redirects [].",
+      "impact": "Successful HTTP responses let tools retrieve content.",
+      "fix": "Return a successful public main-document response; investigate observed errors or unintended redirects.",
+      "source": "TinyFish Browser network response"
+    },
+    {
+      "id": "robots-txt",
+      "name": "robots.txt policy",
+      "status": "pass",
+      "weight": 0,
+      "evidence": "Actually retrieved https://docs.tinyfish.ai/robots.txt; HTTP 200; User-agent: * Content-Signal: ai-train=yes, search=yes, ai-input=yes Disallow: /cdn-cgi/ Allow: /_next/image Disallow: /_next/ Sitemap: https://docs.tinyfish.ai/sitemap.xml. Local policy result allowed (wildcard/PageProof/TinyFish groups).",
+      "impact": "Crawler restrictions may prevent tool access; policy does not prove indexing.",
+      "fix": "Review robots.txt rules with the site owner; do not bypass a denial.",
+      "source": "Local pinned HTTPS GET"
+    },
+    {
+      "id": "readability",
+      "name": "AI extraction readability",
+      "status": "pass",
+      "weight": 2,
+      "evidence": "TinyFish Fetch returned 10724 characters (excerpt complete). The 100-character warning threshold is a heuristic, not an understanding/SEO guarantee. \"For Coding Agents - TinyFish Web Agent\": not present in Fetch text; \"For Coding Agents\": present in Fetch text. Excerpt: This page is the shortest high-signal context dump for coding agents integrating TinyFish. **Always use the official SDKs** — they handle authentication, SSE streaming, retries, and typed responses so you don’t have to. For complete API reference in a single file, use llms-full.txt (218KB, includes all code examples). Note that `llms.txt` is just an index — agents should use `llms-full.txt` for full context. If you’re running inside an MCP-compatible host (Codex, Claude Code, OpenCode, Command Code, Claude Desktop, Cursor, Windsurf, ChatGPT), connect via MCP instead of the REST API. Most hosts sign in with OAuth and need no API key management; Command Code connects with a TinyFish API key. * Codex * Claude Code * OpenCode * Command Code * ChatGPT ``` codex mcp add tinyfish --url https://agent.tinyfish.ai/mcp ``` ``` npx -y install-mcp@latest https://agent.tinyfish.ai/mcp --client claude-code ``` ``` opencode mcp add tinyfish --url https://agent.tinyfish.ai/mcp ``` ``` npx -y @tiny-fish/cli@latest connect command-code ``` ``` https://agent.tinyfish.ai/mcp/chatgpt ``` See the MCP Integration guide for all supported clients and available tools. ## Install the SDK ``` pip install -U ti",
+      "impact": "Text available to Fetch can be consumed by extraction tools; semantic understanding and visibility are not proven.",
+      "fix": "Keep primary content as accessible text. Compare the excerpt to the intended summary; ensure important headings/content are included without login or canvas-only rendering.",
+      "source": "TinyFish Fetch markdown, ttl=0"
+    },
+    {
+      "id": "visibility",
+      "name": "Search visibility observation",
+      "status": "pass",
+      "weight": 0,
+      "evidence": "TinyFish Search query \"https://docs.tinyfish.ai/for-coding-agents\", US/en, first response page; 10 results returned; exact page matches 1. [{\"url\":\"https://docs.tinyfish.ai/for-coding-agents\",\"title\":\"For Coding Agents - TinyFish Web Agent\",\"snippet\":\"Single-page TinyFish context for Claude, Codex, Cursor, and other coding agents. See the all supported clients and available tools.\"},{\"url\":\"https://docs.tinyfish.ai/\",\"title\":\"TinyFish Developer Documentation - TinyFish Web Agent\",\"snippet\":\"TinyFish gives you five public API surfaces: Agent, Research, Search, Fetch, and Browser. This docs site is organized to help you pick the right one quickly, ...\"},{\"url\":\"https://www.tinyfish.ai/\",\"title\":\"TinyFish — Web Infrastructure for AI Agents\",\"snippet\":\"TinyFish provides enterprise infrastructure for AI web agents. Run hundreds of websites simultaneously to navigate, authenticate, extract data, and automate ...\"},{\"url\":\"https://docs.tinyfish.ai/using-with-ai\",\"title\":\"Build with AI - TinyFish Web Agent\",\"snippet\":\"Set up TinyFish Web Agent in minutes using your AI coding assistant. Just copy the prompt below, drop it into Claude, Cursor, or ChatGPT, and start building ...\"},{\"url\":\"https://www.tinyfish.ai/blog/search-and-fetch-are-now-free-for-every-agent-everywhere\",\"title\":\"Search and Fetch are now FREE for every agent ...\",\"snippet\":\"TinyFish Search and Fetch are free for every agent: 30 searches/min, 150 fetches/min, no credit card. Use the REST API, MCP, SDKs, or CLI.\"},{\"url\":\"https://github.com/tinyfish-io/tinyfish-cookbook\",\"title\":\"tinyfish-io/tinyfish-cookbook: A collection of sample apps ...\",\"snippet\":\"Welcome to the TinyFish Cookbook! A growing collection of recipes, demos, and automations built on TinyFish — the web layer for AI agents.\"},{\"url\":\"https://www.bitdoze.com/tinyfish-ai-agents-web-search/\",\"title\":\"TinyFish Review: Free Web Search and Fetch API for AI\",\"snippet\":\"TinyFish gives your AI agents structured web search and clean page fetching for free. 30 search/min, 150 fetch/min. other coding agents\"},{\"url\":\"https://docs.tinyfish.ai/agent-api\",\"title\":\"Agent API - TinyFish Web Agent\",\"snippet\":\"The TinyFish Agent API lets you describe a task in natural language and have TinyFish execute it on a real website. Use it when you want goal-based automation\"},{\"url\":\"https://www.reddit.com/r/aicuriosity/comments/1sle2e5/tinyfish_launches_all_in_one_web_api_for_ai_agents/\",\"title\":\"TinyFish Launches All in One Web API for AI Agents : r/aicuriosity\",\"snippet\":\"TinyFish rolled out a new all in one web API built specifically for AI agents. It brings together four core capabilities under a single key ...\"},{\"url\":\"https://www.youtube.com/watch?v=EcdTeHPc_rA\",\"title\":\"TinyFish CLI + Skills Review, Web Access for Claude Code, ...\",\"snippet\":\"TinyFish says coding agents can reach the live web from the terminal. This video reviews the public claim end to end using the original X ...\"}]. No Google rank/index status inferred from presence or absence.",
+      "impact": "Query results and snippets show how this provider describes content at this moment; they cannot establish overall search visibility or causation.",
+      "fix": "Compare returned snippets with your intended title/summary. If this page is absent, try a relevant target query and review readability/content; absence in one query is not evidence of deindexing.",
+      "source": "TinyFish Search response (not a Google measurement)"
+    },
+    {
+      "id": "links",
+      "name": "Same-origin link health",
+      "status": "not tested",
+      "weight": 0,
+      "evidence": "Optional link checks disabled; zero links requested.",
+      "impact": "Broken destination links can hurt navigation.",
+      "fix": "If needed, run a separately authorized bounded check of up to ten same-origin links.",
+      "source": "No retrieval"
+    }
+  ],
+  "score": {
+    "value": 100,
+    "earned": 22,
+    "available": 22,
+    "measured": 10,
+    "total": 10,
+    "coverage": 100,
+    "formula": "round(100 × Σ(weight × value) / Σ(measured weight)); pass=1, warning=0.5, fail=0. Not tested and weight=0 observations excluded. Coverage = measured scored checks / all scored checks. This is a page hygiene heuristic, not a Google or ranking score."
+  },
+  "priorities": [],
+  "observations": {
+    "preflight": {
+      "url": "https://docs.tinyfish.ai/for-coding-agents",
+      "chain": [
+        {
+          "url": "https://docs.tinyfish.ai/for-coding-agents",
+          "status": 200
+        }
+      ],
+      "robots": {
+        "url": "https://docs.tinyfish.ai/robots.txt",
+        "status": 200,
+        "text": "User-agent: *\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\nDisallow: /cdn-cgi/\nAllow: /_next/image\nDisallow: /_next/\nSitemap: https://docs.tinyfish.ai/sitemap.xml",
+        "allowed": true
+      }
+    },
+    "search": {
+      "ok": true,
+      "data": {
+        "query": "https://docs.tinyfish.ai/for-coding-agents",
+        "results": [
+          {
+            "url": "https://docs.tinyfish.ai/for-coding-agents",
+            "title": "For Coding Agents - TinyFish Web Agent",
+            "snippet": "Single-page TinyFish context for Claude, Codex, Cursor, and other coding agents. See the all supported clients and available tools."
+          },
+          {
+            "url": "https://docs.tinyfish.ai/",
+            "title": "TinyFish Developer Documentation - TinyFish Web Agent",
+            "snippet": "TinyFish gives you five public API surfaces: Agent, Research, Search, Fetch, and Browser. This docs site is organized to help you pick the right one quickly, ..."
+          },
+          {
+            "url": "https://www.tinyfish.ai/",
+            "title": "TinyFish — Web Infrastructure for AI Agents",
+            "snippet": "TinyFish provides enterprise infrastructure for AI web agents. Run hundreds of websites simultaneously to navigate, authenticate, extract data, and automate ..."
+          },
+          {
+            "url": "https://docs.tinyfish.ai/using-with-ai",
+            "title": "Build with AI - TinyFish Web Agent",
+            "snippet": "Set up TinyFish Web Agent in minutes using your AI coding assistant. Just copy the prompt below, drop it into Claude, Cursor, or ChatGPT, and start building ..."
+          },
+          {
+            "url": "https://www.tinyfish.ai/blog/search-and-fetch-are-now-free-for-every-agent-everywhere",
+            "title": "Search and Fetch are now FREE for every agent ...",
+            "snippet": "TinyFish Search and Fetch are free for every agent: 30 searches/min, 150 fetches/min, no credit card. Use the REST API, MCP, SDKs, or CLI."
+          },
+          {
+            "url": "https://github.com/tinyfish-io/tinyfish-cookbook",
+            "title": "tinyfish-io/tinyfish-cookbook: A collection of sample apps ...",
+            "snippet": "Welcome to the TinyFish Cookbook! A growing collection of recipes, demos, and automations built on TinyFish — the web layer for AI agents."
+          },
+          {
+            "url": "https://www.bitdoze.com/tinyfish-ai-agents-web-search/",
+            "title": "TinyFish Review: Free Web Search and Fetch API for AI",
+            "snippet": "TinyFish gives your AI agents structured web search and clean page fetching for free. 30 search/min, 150 fetch/min. other coding agents"
+          },
+          {
+            "url": "https://docs.tinyfish.ai/agent-api",
+            "title": "Agent API - TinyFish Web Agent",
+            "snippet": "The TinyFish Agent API lets you describe a task in natural language and have TinyFish execute it on a real website. Use it when you want goal-based automation"
+          },
+          {
+            "url": "https://www.reddit.com/r/aicuriosity/comments/1sle2e5/tinyfish_launches_all_in_one_web_api_for_ai_agents/",
+            "title": "TinyFish Launches All in One Web API for AI Agents : r/aicuriosity",
+            "snippet": "TinyFish rolled out a new all in one web API built specifically for AI agents. It brings together four core capabilities under a single key ..."
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=EcdTeHPc_rA",
+            "title": "TinyFish CLI + Skills Review, Web Access for Claude Code, ...",
+            "snippet": "TinyFish says coding agents can reach the live web from the terminal. This video reviews the public claim end to end using the original X ..."
+          }
+        ],
+        "returned": 10,
+        "location": "US",
+        "language": "en"
+      }
+    },
+    "fetch": {
+      "ok": true,
+      "data": {
+        "finalUrl": "https://docs.tinyfish.ai/for-coding-agents",
+        "text": "This page is the shortest high-signal context dump for coding agents integrating TinyFish. **Always use the official SDKs** — they handle authentication, SSE streaming, retries, and typed responses so you don’t have to.\n\nFor complete API reference in a single file, use llms-full.txt (218KB, includes all code examples). Note that `llms.txt` is just an index — agents should use `llms-full.txt` for full context.\n\nIf you’re running inside an MCP-compatible host (Codex, Claude Code, OpenCode, Command Code, Claude Desktop, Cursor, Windsurf, ChatGPT), connect via MCP instead of the REST API. Most hosts sign in with OAuth and need no API key management; Command Code connects with a TinyFish API key.\n\n* Codex\n* Claude Code\n* OpenCode\n* Command Code\n* ChatGPT\n\n```\ncodex mcp add tinyfish --url https://agent.tinyfish.ai/mcp\n```\n\n```\nnpx -y install-mcp@latest https://agent.tinyfish.ai/mcp --client claude-code\n```\n\n```\nopencode mcp add tinyfish --url https://agent.tinyfish.ai/mcp\n```\n\n```\nnpx -y @tiny-fish/cli@latest connect command-code\n```\n\n```\nhttps://agent.tinyfish.ai/mcp/chatgpt\n```\n\nSee the MCP Integration guide for all supported clients and available tools.\n\n##  Install the SDK\n\n```\npip install -U tinyfish\n```\n\n```\nnpm install @tiny-fish/sdk@latest\n```\n\n| API | Typical Latency | Suggested Timeout |\n| --- | --- | --- |\n| Agent (sync) | 15-60s | 120s |\n| Agent (SSE) | 15-60s (streaming) | N/A (SSE) |\n| Search | 1-3s | 10s |\n| Fetch | 1-20s | 150s |\n| Browser (create) | 10-30s | 60s |\n\n*Fetch: backend timeout is 110s per URL; requests are also subject to a 120s CDN ceiling. Set client timeout to 150s to receive timeout errors cleanly.*\n\n##  Authentication\n\nSet your API key (get one from agent.tinyfish.ai/api-keys):\n\n```\nexport TINYFISH_API_KEY=\"your_api_key_here\"\n```\n\nBoth SDKs read `TINYFISH_API_KEY` from the environment automatically. See Authentication for more details.\n\n##  Choose the Right TinyFish API\n\n| API | Use it when | Docs |\n| --- | --- | --- |\n| Agent | You want TinyFish to execute a goal on a real website | Agent reference |\n| Search | You want ranked web results for a query | Search overview |\n| Fetch | You want extracted page content from one or more URLs | Fetch overview |\n| Browser | You want a remote browser session for direct Playwright/CDP control | Browser overview |\n\n###  Quick Decision Tree\n\n* **Need data from a URL?** — Agent API (goal-based extraction) or Fetch API (raw page content)\n* **Need search results?** — Search API\n* **Need browser control?** — Browser API (direct Playwright/CDP access)\n* **Need logged-in state across recurring runs?** — Create a Browser Context Profile, then run with `use_profile: true`\n\n##  Authenticated or Recurring Runs\n\nWhen a task should reuse a login session, use **Browser Context Profiles** first. Do not make the agent log in from scratch every run unless the task explicitly needs a fresh browser. Browser Context Profiles are saved browser state for a site or account. They are different from `browser_profile: \"lite\" | \"stealth\"`, which only chooses the browser runtime mode.\n\n1\n\nCreate and set up a profile\n\nUse the Browser Context Profiles API to create a profile, start a setup session, connect to `cdp_url` with Playwright/Puppeteer/CDP, sign in, and save with `session_id`. The dashboard setup UI is a manual helper.\n\n2\n\nRun with saved state\n\nPass `use_profile: true` to use the default profile, or add `profile_id` for a specific profile.\n\n3\n\nRepair stale sessions with Vault\n\nFor long-lived workflows, pair profiles with `use_vault: true` so TinyFish can sign in again when cookies expire.\n\n```\nresult = client.agent.run(\n    url=\"https://app.example.com/dashboard\",\n    goal=\"Summarize the account health dashboard.\",\n    use_profile=True,\n    use_vault=True,\n)\n```\n\n```\nconst run = await client.agent.run({\n  url: \"https://app.example.com/dashboard\",\n  goal: \"Summarize the account health dashboard.\",\n  use_profile: true,\n  use_vault: true,\n});\n```\n\n`use_profile: true` uses the default Browser Context Profile. Use `profile_id` when the user names a specific Browser Context Profile; `profile_id` requires `use_profile: true`:\n\n```\nresult = client.agent.run(\n    url=\"https://app.example.com/dashboard\",\n    goal=\"Summarize the latest invoice, including the amount due and payment deadline.\",\n    use_profile=True,\n    profile_id=\"prof_abc123def4567890\",\n)\n```\n\n```\nconst run = await client.agent.run({\n  url: \"https://app.example.com/dashboard\",\n  goal: \"Summarize the latest invoice, including the amount due and payment deadline.\",\n  use_profile: true,\n  profile_id: \"prof_abc123def4567890\",\n});\n```\n\n##  SDK Examples\n\n```\nfrom tinyfish import TinyFish, CompleteEvent\n\nclient = TinyFish()\n\nwith client.agent.stream(\n    url=\"https://scrapeme.live/shop\",\n    goal=\"Extract the first 2 product names and prices. Return as JSON.\",\n) as stream:\n    for event in stream:\n        if isinstance(event, CompleteEvent):\n            print(event.result_json)\n```\n\n```\nimport { TinyFish } from \"@tiny-fish/sdk\";\n\nconst client = new TinyFish();\n\nconst stream = await client.agent.stream({\n  url: \"https://scrapeme.live/shop\",\n  goal: \"Extract the first 2 product names and prices. Return as JSON.\",\n});\n\nfor await (const event of stream) {\n  if (event.type === \"COMPLETE\") {\n    console.log(event.result);\n  }\n}\n```\n\n###  Agent — Synchronous\n\n```\nfrom tinyfish import TinyFish, RunStatus\n\nclient = TinyFish()\n\nresult = client.agent.run(\n    url=\"https://scrapeme.live/shop\",\n    goal=\"Extract the first 2 product names and prices. Return as JSON.\",\n)\nif result.status == RunStatus.COMPLETED:\n    print(result.result)\n```\n\n```\nimport { TinyFish, RunStatus } from \"@tiny-fish/sdk\";\n\nconst client = new TinyFish();\n\nconst run = await client.agent.run({\n  url: \"https://scrapeme.live/shop\",\n  goal: \"Extract the first 2 product names and prices. Return as JSON.\",\n});\n\nif (run.status === RunStatus.COMPLETED) {\n  console.log(run.result);\n}\n```\n\n###  Search\n\n```\nresult = client.search.query(\"web automation tools\", location=\"US\", language=\"en\")\nprint(result)\n```\n\n```\nconst result = await client.search.query({\n  query: \"web automation tools\",\n  location: \"US\",\n  language: \"en\",\n});\nconsole.log(result);\n```\n\nUse `recency_minutes` for a freshness window, `after_date` / `before_date` for calendar date filters, and `domain_type` for content category:\n\n* `recency_minutes`: integer `1..5256000`\n* `after_date` / `before_date`: `YYYY-MM-DD`\n* `domain_type`: `\"web\"` (default) | `\"news\"` | `\"research_paper\"`\n* `pub_year_min` / `pub_year_max`: integer `0..9999`, inclusive; only supported for `domain_type=research_paper`\n* do not combine `recency_minutes` with date filters\n* if both dates are present, `after_date <= before_date`\n* if both pub\\_year bounds are present, `pub_year_min <= pub_year_max`\n* `after_date`, `before_date`, and `recency_minutes` are not supported for `domain_type=research_paper` — use `pub_year_min` / `pub_year_max` instead\n\n###  Fetch\n\n```\nresult = client.fetch.get_contents(urls=[\"https://www.tinyfish.ai/\"])\nprint(result)\n```\n\n```\nconst result = await client.fetch.getContents({\n  urls: [\"https://www.tinyfish.ai/\"],\n});\nconsole.log(result);\n```\n\nOmit `ttl` for the default cache behavior. Add `ttl` only when freshness matters: set it to `0` when you want a live fetch, or to a positive number of seconds to accept cached entries younger than that window.\n\n###  Anti-Detection Mode\n\nFor sites with bot protection, add stealth mode and a proxy:\n\n```\nfrom tinyfish import TinyFish, BrowserProfile, ProxyConfig, ProxyCountryCode\n\nclient = TinyFish()\n\nresult = client.agent.run(\n    url=\"https://protected-site.com\",\n    goal=\"Extract pricing data. Return as JSON.\",\n    browser_profile=BrowserProfile.STEALTH,\n    proxy_config=ProxyConfig(enabled=True, country_code=ProxyCountryCode.US),\n)\n```\n\n```\nimport { TinyFish, BrowserProfile, ProxyCountryCode } from \"@tiny-fish/sdk\";\n\nconst client = new TinyFish();\n\nconst run = await client.agent.run({\n  url: \"https://protected-site.com\",\n  goal: \"Extract pricing data. Return as JSON.\",\n  browser_profile: BrowserProfile.STEALTH,\n  proxy_config: {\n    enabled: true,\n    country_code: ProxyCountryCode.US,\n  },\n});\n```\n\n##  Expected Latency\n\n| API | Typical Latency | Suggested Timeout |\n| --- | --- | --- |\n| Agent (sync) | 15-60s | 120s |\n| Agent (SSE) | 15-60s (streaming) | N/A (SSE) |\n| Search | 1-3s | 10s |\n| Fetch | 1-20s | 150s |\n| Browser (create) | 10-30s | 60s |\n\n##  Prompting\n\nGoal quality determines success rate. Vague goals like “get the data” fail; crafted goals with explicit fields, output format, and edge-case handling succeed consistently.\n\nSee the full Prompting Guide for tested patterns, templates, and examples.\n\n##  Common Gotchas\n\n1. **Browser API session creation takes 10-30s** — set `timeout=60` on your HTTP client.\n2. **TypeScript needs `\"type\": \"module\"`** in `package.json` for top-level `await`, or wrap code in `async function main() { ... }; main()`.\n3. **`COMPLETED` status does not mean the goal succeeded** — always check `result_json` for failure signals like “captcha”, “blocked”, or “access denied”.\n4. **Fetch API has a 110s per-URL backend timeout** — requests are also subject to a 120s CDN ceiling for the full batch. Set your client timeout to at least 150s.\n\nRaw API Endpoints (cURL)\n\nIf you can’t use the SDKs, here are the raw endpoints. All use the `X-API-Key` header for authentication.\n\n###  Agent\n\n```\ncurl -N -X POST https://agent.tinyfish.ai/v1/automation/run-sse \\\n  -H \"X-API-Key: $TINYFISH_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"url\": \"https://scrapeme.live/shop\",\n    \"goal\": \"Extract the first 2 product names and prices. Return JSON.\"\n  }'\n```\n\n###  Search\n\n```\ncurl \"https://api.search.tinyfish.ai?query=web+automation+tools&location=US&language=en\" \\\n  -H \"X-API-Key: $TINYFISH_API_KEY\"\n```\n\n###  Fetch\n\n```\ncurl -X POST https://api.fetch.tinyfish.ai \\\n  -H \"X-API-Key: $TINYFISH_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"urls\": [\"https://www.tinyfish.ai/\"]}'\n```\n\n###  Browser\n\n```\ncurl -X POST https://api.browser.tinyfish.ai \\\n  -H \"X-API-Key: $TINYFISH_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"url\": \"https://www.tinyfish.ai\"}'\n```\n\n##  What to Read Next\n\n## Agent reference\n\nGoal-based automation, endpoint choice, runs, profiles, and proxies\n\n## Authentication\n\nAPI key setup and troubleshooting\n\n## Search overview\n\nSearch query parameters and result shape\n\n## Fetch overview\n\nFetch multiple URLs and choose output formats\n\n## Browser overview\n\nCreate a remote browser session and connect via CDP\n\n## Examples\n\nCopy-paste examples for common workflows\n\n## llms-full.txt\n\nComplete API reference in a single file (218KB)",
+        "characters": 10724,
+        "truncated": false,
+        "title": "For Coding Agents - TinyFish Web Agent"
+      }
+    },
+    "dom": {
+      "ok": true,
+      "data": {
+        "finalUrl": "https://docs.tinyfish.ai/for-coding-agents",
+        "status": 200,
+        "redirects": [],
+        "xRobotsTag": null,
+        "limited": true,
+        "blockedRequests": 2,
+        "settle": "bounded-snapshot",
+        "cleanup": "confirmed"
+      }
+    }
+  },
+  "limits": [
+    "Single page and bounded rendered snapshot only; length thresholds and scoring are heuristics.",
+    "No Google rankings, indexing status, traffic, backlinks, Lighthouse scores or Core Web Vitals measured.",
+    "Search presence/absence is one provider query observation, excluded from scoring; no causal ranking claim.",
+    "JSON-LD syntax/presence only, not schema.org validation, factual accuracy or rich-result eligibility.",
+    "Remote TinyFish Fetch independently resolves/follows redirects; DNS/redirect safety there is a provider trust boundary. Local requests are pinned; Browser routes validate but cannot pin remote DNS.",
+    "Browser GET-only filtering, request cap and settling deadline can limit rendering; inaccessible DOM checks stay not tested.",
+    "No optional link requests, authentication, interactive actions, writes or audited-site modifications."
+  ]
+}

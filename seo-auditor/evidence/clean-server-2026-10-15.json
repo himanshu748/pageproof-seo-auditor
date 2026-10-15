@@ -1,0 +1,11 @@
+{
+  "checkedOn": "2026-10-15",
+  "compiledNpmStart": "passed",
+  "liveAuditsEnabled": false,
+  "newProviderCalls": 0,
+  "originalLiveReceiptsLoaded": 4,
+  "freshLiveJsonExportByteIdentical": true,
+  "standaloneHtmlExport": "passed; CSP and live provenance present",
+  "syntheticMalformedJsonLd": "fail as expected, labeled fixture",
+  "allRequests": "localhost only"
+}

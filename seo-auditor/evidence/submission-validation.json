@@ -1,0 +1,24 @@
+{
+  "checkedOn": "2026-10-15",
+  "sourceIsolation": "Exact reviewed submission ZIP extracted into a new temporary directory",
+  "dependencyInstall": "npm ci --offline --no-audit --no-fund; 63 packages freshly installed; no dependency symlink",
+  "dependencyReuse": false,
+  "liveCalls": 0,
+  "providerKeyInTestEnvironment": false,
+  "results": {
+    "check": {
+      "exitCode": 0
+    },
+    "tests": {
+      "exitCode": 0
+    },
+    "build": {
+      "exitCode": 0
+    },
+    "fixtures": {
+      "exitCode": 0
+    }
+  },
+  "loopbackTests": "Temporary local HTTP tests; no provider calls",
+  "historicalInstallFailure": "14 October ENOSPC, cleared 15 October after free space became available"
+}

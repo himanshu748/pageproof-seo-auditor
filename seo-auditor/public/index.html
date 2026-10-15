@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A single-page SEO and AI readability audit with evidence from TinyFish.">
+  <title>PageProof: see what the web can read</title>
+  <link rel="preload" href="/assets/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/public-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="wordmark" href="/" aria-label="PageProof home"><span class="logo" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M7 4h13l5 5v19H7z"/><path d="M20 4v6h5M12 16h8M12 21h5"/></svg></span>PageProof<span class="tag">SEO & AI READABILITY</span></a>
+    <span class="provider"><span class="dot" aria-hidden="true"></span>Local workspace <span class="provider-separator">/</span> Powered by TinyFish</span>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <div class="intro-copy">
+        <p class="eyebrow">A clearer view of one page</p>
+        <h1 id="page-title">See what the<br>web can read<span class="period">.</span></h1>
+        <p class="lede">Compare your page, what AI tools extract, and how a search query describes it. Find the gaps. Leave with specific fixes.</p>
+        <p class="intro-footnote">Measured signals. Visible evidence. No invented rankings.</p>
+      </div>
+      <figure class="evidence-map" aria-labelledby="map-title">
+        <figcaption id="map-title">Three sources. One accountable report.</figcaption>
+        <div class="map-window"><div class="window-bar"><span aria-hidden="true"></span><span>Public page</span><span class="window-label">read only</span></div>
+          <div class="map-document" aria-hidden="true"><div class="document-heading"></div><div class="document-line"></div><div class="document-line short"></div><div class="document-block"><span>&lt;head&gt;</span><i></i><i></i><span>&lt;/head&gt;</span></div><div class="document-line"></div><div class="document-line short"></div></div>
+          <div class="map-receipt" aria-hidden="true"><span>Evidence</span><svg viewBox="0 0 20 20"><path d="m4 10 4 4 8-9"/></svg></div>
+        </div>
+        <svg class="map-connectors" viewBox="0 0 390 48" preserveAspectRatio="none" aria-hidden="true"><path d="M195 0v16H62v31M195 0v47M195 0v16h133v31"/></svg>
+        <div class="map-sources"><span><strong>Browser</strong>Rendered DOM</span><span><strong>Fetch</strong>Extracted text</span><span><strong>Search</strong>Query response</span></div>
+        <p id="map-caption">The diagram explains sources, not audit results.</p>
+      </figure>
+    </section>
+    <section class="audit-box" aria-labelledby="audit-label">
+      <div class="box-top"><div><p class="eyebrow">Start with a source</p><h2 id="audit-label">Audit a public page</h2></div><span id="credit-state" class="budget-state">Checking local configuration...</span></div>
+      <form id="audit-form">
+        <label for="url">Public HTTPS URL</label>
+        <div class="url-row"><input type="url" id="url" name="url" placeholder="https://example.com/" required maxlength="2000" autocomplete="url"><button type="submit" id="submit" disabled>Checking availability</button></div>
+        <div class="query-row"><div><label for="query">Target search query <span class="optional">optional</span></label><input type="text" id="query" maxlength="180" placeholder="What would someone search for?"></div><p class="help">Leave blank to search the page URL.<br>Search observations use US / English.</p></div>
+        <label class="permission"><input type="checkbox" id="permitted" required> I have permission to audit this publicly accessible page.</label>
+        <p class="small policy">Read only. No login or site changes. Uses approved existing free credits.</p>
+        <p id="availability-note" class="availability-note" hidden></p>
+      </form>
+      <div class="fixture-row"><span>Explore synthetic test fixtures<span class="fixture-explainer">No API calls or credit use</span></span><div class="fixture-controls"><button class="text-button" data-fixture="flawed">Flawed page</button><button class="text-button" data-fixture="valid">Valid page</button><button class="text-button" data-fixture="malformed">Broken JSON-LD</button><button class="text-button" data-fixture="blocked">Blocked access</button><button class="text-button" data-fixture="redirect">Redirect</button><button class="text-button" data-fixture="timeout">Timeout</button></div></div>
+    </section>
+    <section id="receipts" class="receipts" aria-labelledby="saved-label" hidden><div class="receipt-heading"><label id="saved-label" for="saved">Saved genuine live receipts</label><p class="small">Original measurement times. No new API calls.</p></div><div class="receipt-controls"><select id="saved"><option value="">Choose an audit...</option></select><button id="open-saved" class="button secondary" disabled>Open saved report</button></div></section>
+    <div id="status" role="status" aria-live="polite"></div>
+    <section id="report" hidden aria-label="Audit report">
+      <div class="report-top"><div><p id="mode" class="eyebrow"></p><h2 id="report-title" tabindex="-1">Your page, examined.</h2><p id="report-url" class="report-url"></p><p id="report-time" class="small"></p></div><div class="download-row"><a id="html-download" class="button secondary">Download HTML</a><a id="json-download" class="button secondary">Download JSON</a></div></div>
+      <div class="summary"><div class="score"><span id="score-number"></span><span id="score-label">Page hygiene / 100</span><small>Heuristic, not a ranking score</small></div><div class="coverage"><strong id="coverage"></strong><p id="coverage-detail"></p><div id="counts" class="counts"></div></div><div class="summary-note"><strong>Read the coverage first</strong><p>A score describes measured checks on this snapshot. Limited rendering and unknown checks are shown separately.</p><small>No Google rankings or indexing claims.</small></div></div>
+      <section class="priorities" aria-labelledby="priorities-title"><p class="eyebrow">Act on the evidence</p><h2 id="priorities-title">Your next best fixes</h2><ol id="priorities-list"></ol></section>
+      <div class="checks-header"><h2>Every check, with evidence</h2><label for="filter" class="sr-only">Filter checks</label><select id="filter"><option value="all">All checks</option><option value="fail">Fails</option><option value="warning">Warnings</option><option value="pass">Passes</option><option value="not tested">Not tested</option></select></div>
+      <div id="checks"></div>
+      <details class="method"><summary>How the score works</summary><p id="formula"></p><p id="calculation"></p></details>
+      <details class="method"><summary>What was not measured and other limits</summary><ul id="limits"></ul></details>
+    </section>
+    <section id="empty" class="empty"><svg viewBox="0 0 40 40" class="empty-icon" aria-hidden="true"><path d="M11 5h13l6 6v24H11zM24 5v7h6M16 19h9M16 24h9M16 29h5"/></svg><h2>Your findings start here.</h2><p>Open a saved live receipt or try a labeled fixture.<br>An available live audit starts with a permitted public URL.</p></section>
+  </main>
+  <footer><span>PageProof <span class="footer-divider">/</span> Built with TinyFish</span><span>Honest measurements. Useful fixes.</span></footer>
+</body>
+</html>

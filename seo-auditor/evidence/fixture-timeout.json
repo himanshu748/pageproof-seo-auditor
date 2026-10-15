@@ -1,0 +1,188 @@
+{
+  "version": 1,
+  "id": "188b0673-db06-4afd-8722-c8d30a8fc384",
+  "mode": "fixture",
+  "url": "https://example.com/timeout",
+  "observedAt": "2026-10-12T16:54:48.052Z",
+  "query": "accessible garden design",
+  "findings": [
+    {
+      "id": "title",
+      "name": "Page title",
+      "status": "not tested",
+      "weight": 3,
+      "evidence": "SYNTHETIC; no network request made. DOM unavailable: browser_timeout. No absence inferred.",
+      "impact": "A descriptive unique title helps readers and search tools identify the page.",
+      "fix": "Obtain a permitted accessible page, then retest. Add one descriptive <title> in <head>.",
+      "source": "Synthetic fixture contract — Synthetic HTML fixture (TinyFish not called)"
+    },
+    {
+      "id": "description",
+      "name": "Meta description",
+      "status": "not tested",
+      "weight": 2,
+      "evidence": "SYNTHETIC; no network request made. DOM unavailable: browser_timeout. No absence inferred.",
+      "impact": "A clear summary can help tools describe this page; displayed snippets may differ.",
+      "fix": "Obtain a permitted accessible page, then retest. Add one unique <meta name=\"description\" content=\"…\"> in <head>.",
+      "source": "Synthetic fixture contract — Synthetic HTML fixture (TinyFish not called)"
+    },
+    {
+      "id": "headings",
+      "name": "Heading structure",
+      "status": "not tested",
+      "weight": 3,
+      "evidence": "SYNTHETIC; no network request made. DOM unavailable: browser_timeout. No absence inferred.",
+      "impact": "Headings help readers and extraction tools follow the content hierarchy.",
+      "fix": "Obtain a permitted accessible page, then retest. Use one clear H1 and ordered H2/H3 sections without skipping levels.",
+      "source": "Synthetic fixture contract — Synthetic HTML fixture (TinyFish not called)"
+    },
+    {
+      "id": "canonical",
+      "name": "Canonical URL",
+      "status": "not tested",
+      "weight": 2,
+      "evidence": "SYNTHETIC; no network request made. DOM unavailable: browser_timeout. No absence inferred.",
+      "impact": "An unambiguous canonical can help consolidate duplicate page signals.",
+      "fix": "Obtain a permitted accessible page, then retest. Add one absolute HTTPS <link rel=\"canonical\" href=\"…\"> in <head>, pointing to your preferred public page.",
+      "source": "Synthetic fixture contract — Synthetic HTML fixture (TinyFish not called)"
+    },
+    {
+      "id": "robots",
+      "name": "Robots directives",
+      "status": "not tested",
+      "weight": 3,
+      "evidence": "SYNTHETIC; no network request made. DOM unavailable: browser_timeout. No absence inferred.",
+      "impact": "Noindex/nofollow directives affect crawler treatment when honored; indexing itself is unmeasured.",
+      "fix": "Obtain a permitted accessible page, then retest. Review meta robots and X-Robots-Tag; remove restrictive directives only if this page should be discoverable.",
+      "source": "Synthetic fixture contract — Synthetic HTML fixture (TinyFish not called)"
+    },
+    {
+      "id": "alt",
+      "name": "Image alt text",
+      "status": "not tested",
+      "weight": 2,
+      "evidence": "SYNTHETIC; no network request made. DOM unavailable: browser_timeout. No absence inferred.",
+      "impact": "Useful alt text gives image meaning to screen readers and text extraction tools.",
+      "fix": "Obtain a permitted accessible page, then retest. Add concise purpose-based alt text to informative images; keep alt=\"\" only for decorative images.",
+      "source": "Synthetic fixture contract — Synthetic HTML fixture (TinyFish not called)"
+    },
+    {
+      "id": "og",
+      "name": "Open Graph metadata",
+      "status": "not tested",
+      "weight": 1,
+      "evidence": "SYNTHETIC; no network request made. DOM unavailable: browser_timeout. No absence inferred.",
+      "impact": "Social and AI tools may use metadata for a consistent page summary.",
+      "fix": "Obtain a permitted accessible page, then retest. Set og:title, og:description, og:type and a public absolute HTTPS og:image in <head>.",
+      "source": "Synthetic fixture contract — Synthetic HTML fixture (TinyFish not called)"
+    },
+    {
+      "id": "structured",
+      "name": "Structured data",
+      "status": "not tested",
+      "weight": 2,
+      "evidence": "SYNTHETIC; no network request made. DOM unavailable: browser_timeout. No absence inferred.",
+      "impact": "Machine-readable entities can help tools understand content. Presence does not guarantee rich results.",
+      "fix": "Obtain a permitted accessible page, then retest. Add page-appropriate JSON-LD with @context and @type; validate syntax and review schema.org semantics separately.",
+      "source": "Synthetic fixture contract — Synthetic HTML fixture (TinyFish not called)"
+    },
+    {
+      "id": "http",
+      "name": "HTTP status",
+      "status": "not tested",
+      "weight": 2,
+      "evidence": "SYNTHETIC; no network request made. No successful Browser response receipt. HEAD preflight is separate: [{\"url\":\"https://example.com/timeout\",\"status\":403}].",
+      "impact": "HTTP response affects retrieval.",
+      "fix": "Resolve the recorded access/timeout issue and rerun.",
+      "source": "Synthetic fixture contract — Local pinned HEAD preflight"
+    },
+    {
+      "id": "robots-txt",
+      "name": "robots.txt policy",
+      "status": "pass",
+      "weight": 0,
+      "evidence": "SYNTHETIC; no network request made. Actually retrieved https://example.com/robots.txt; HTTP 200; User-agent: * Allow: /. Local policy result allowed (wildcard/PageProof/TinyFish groups).",
+      "impact": "Crawler restrictions may prevent tool access; policy does not prove indexing.",
+      "fix": "Review robots.txt rules with the site owner; do not bypass a denial.",
+      "source": "Synthetic fixture contract — Local pinned HTTPS GET"
+    },
+    {
+      "id": "readability",
+      "name": "AI extraction readability",
+      "status": "not tested",
+      "weight": 2,
+      "evidence": "SYNTHETIC; no network request made. TinyFish Fetch unavailable: fetch_timeout. No content absence inferred.",
+      "impact": "Extraction gaps may reduce machine readability.",
+      "fix": "Investigate access restrictions or transient errors, then rerun Fetch.",
+      "source": "Synthetic fixture contract — TinyFish Fetch"
+    },
+    {
+      "id": "visibility",
+      "name": "Search visibility observation",
+      "status": "not tested",
+      "weight": 0,
+      "evidence": "SYNTHETIC; no network request made. TinyFish Search unavailable: synthetic_search_unavailable.",
+      "impact": "Search visibility cannot be assessed from this failed request.",
+      "fix": "Resolve provider availability and retry only within the approved request budget.",
+      "source": "Synthetic fixture contract — TinyFish Search"
+    },
+    {
+      "id": "links",
+      "name": "Same-origin link health",
+      "status": "not tested",
+      "weight": 0,
+      "evidence": "SYNTHETIC; no network request made. Optional link checks disabled; zero links requested.",
+      "impact": "Broken destination links can hurt navigation.",
+      "fix": "If needed, run a separately authorized bounded check of up to ten same-origin links.",
+      "source": "Synthetic fixture contract — No retrieval"
+    }
+  ],
+  "score": {
+    "value": null,
+    "earned": 0,
+    "available": 0,
+    "measured": 0,
+    "total": 10,
+    "coverage": 0,
+    "formula": "round(100 × Σ(weight × value) / Σ(measured weight)); pass=1, warning=0.5, fail=0. Not tested and weight=0 observations excluded. Coverage = measured scored checks / all scored checks. This is a page hygiene heuristic, not a Google or ranking score."
+  },
+  "priorities": [],
+  "observations": {
+    "preflight": {
+      "url": "https://example.com/timeout",
+      "chain": [
+        {
+          "url": "https://example.com/timeout",
+          "status": 403
+        }
+      ],
+      "robots": {
+        "url": "https://example.com/robots.txt",
+        "status": 200,
+        "text": "User-agent: *\nAllow: /",
+        "allowed": true
+      }
+    },
+    "dom": {
+      "ok": false,
+      "code": "browser_timeout"
+    },
+    "fetch": {
+      "ok": false,
+      "code": "fetch_timeout"
+    },
+    "search": {
+      "ok": false,
+      "code": "synthetic_search_unavailable"
+    }
+  },
+  "limits": [
+    "Single page and bounded rendered snapshot only; length thresholds and scoring are heuristics.",
+    "No Google rankings, indexing status, traffic, backlinks, Lighthouse scores or Core Web Vitals measured.",
+    "Search presence/absence is one provider query observation, excluded from scoring; no causal ranking claim.",
+    "JSON-LD syntax/presence only, not schema.org validation, factual accuracy or rich-result eligibility.",
+    "Remote TinyFish Fetch independently resolves/follows redirects; DNS/redirect safety there is a provider trust boundary. Local requests are pinned; Browser routes validate but cannot pin remote DNS.",
+    "Browser GET-only filtering, request cap and settling deadline can limit rendering; inaccessible DOM checks stay not tested.",
+    "No optional link requests, authentication, interactive actions, writes or audited-site modifications."
+  ]
+}

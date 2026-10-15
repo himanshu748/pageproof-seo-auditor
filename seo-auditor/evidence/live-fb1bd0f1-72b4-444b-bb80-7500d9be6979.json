@@ -1,0 +1,225 @@
+{
+  "version": 1,
+  "id": "fb1bd0f1-72b4-444b-bb80-7500d9be6979",
+  "mode": "live",
+  "url": "https://www.tinyfish.ai/",
+  "observedAt": "2026-10-12T16:57:26.549Z",
+  "query": "https://www.tinyfish.ai/",
+  "findings": [
+    {
+      "id": "title",
+      "name": "Page title",
+      "status": "pass",
+      "weight": 3,
+      "evidence": "head title count: 1; \"TinyFish — Web Infrastructure for AI Agents\" (43 characters). 30–60 characters is a display heuristic, not a Google requirement.",
+      "impact": "A descriptive unique title helps readers and search tools identify the page.",
+      "fix": "Keep this descriptive title unique as content changes.",
+      "source": "TinyFish Browser rendered DOM"
+    },
+    {
+      "id": "description",
+      "name": "Meta description",
+      "status": "warning",
+      "weight": 2,
+      "evidence": "meta[name=description] count: 1; \"TinyFish provides enterprise infrastructure for AI web agents. Run hundreds of websites simultaneously to navigate, authenticate, extract data, and automate web workflows with a fully serverless architecture.\" (208 characters). 70–160 characters is a heuristic; search snippets are not guaranteed.",
+      "impact": "A clear summary can help tools describe this page; displayed snippets may differ.",
+      "fix": "Write a specific summary of this page, roughly 70–160 characters when natural. Do not pad text just to satisfy a heuristic.",
+      "source": "TinyFish Browser rendered DOM"
+    },
+    {
+      "id": "headings",
+      "name": "Heading structure",
+      "status": "pass",
+      "weight": 3,
+      "evidence": "20 DOM headings; H1 count 1; skipped levels false; empty headings false. [{\"level\":1,\"value\":\"The web stackfor AI agents.\"},{\"level\":2,\"value\":\"What TinyFish can do.\"},{\"level\":3,\"value\":\"Monitor web pages\"},{\"level\":3,\"value\":\"Enrich records\"},{\"level\":3,\"value\":\"Research anything\"},{\"level\":3,\"value\":\"Automate portals\"},{\"level\":2,\"value\":\"Use withChatGPT,OpenClaw,Claude,Cursor,HermesGrokor in your {code}.\"},{\"level\":2,\"value\":\"Give your agent the web.\"},{\"level\":2,\"value\":\"Access the web behind the login.\"},{\"level\":3,\"value\":\"TinyVault\"},{\"level\":3,\"value\":\"TinyProfiles\"},{\"level\":3,\"value\":\"Run recordings\"},{\"level\":2,\"value\":\"Trusted by developersand the teams behind them.\"},{\"level\":2,\"value\":\"Simple pricing for real web work.\"},{\"level\":2,\"value\":\"Common questions.\"},{\"level\":3,\"value\":\"How is this different from other tools?\"},{\"level\":3,\"value\":\"Why would I use this instead of my LLM's built-in web search?\"},{\"level\":3,\"value\":\"How accurate is TinyAgent?\"},{\"level\":3,\"value\":\"Can agents authenticate into websites?\"},{\"level\":2,\"value\":\"Give your agentthe real world.\"}]",
+      "impact": "Headings help readers and extraction tools follow the content hierarchy.",
+      "fix": "Use one clear H1 and ordered H2/H3 sections without skipping levels.",
+      "source": "TinyFish Browser rendered DOM"
+    },
+    {
+      "id": "canonical",
+      "name": "Canonical URL",
+      "status": "pass",
+      "weight": 2,
+      "evidence": "[\"https://www.tinyfish.ai\"]; resolved https://www.tinyfish.ai/. Destination not fetched; canonical indexing/selection unmeasured.",
+      "impact": "An unambiguous canonical can help consolidate duplicate page signals.",
+      "fix": "Add one absolute HTTPS <link rel=\"canonical\" href=\"…\"> in <head>, pointing to your preferred public page.",
+      "source": "TinyFish Browser rendered DOM"
+    },
+    {
+      "id": "robots",
+      "name": "Robots directives",
+      "status": "pass",
+      "weight": 3,
+      "evidence": "No robots meta found in DOM; X-Robots-Tag absent in retrieved main-document response. Default crawler behavior may apply; indexing not verified.",
+      "impact": "Noindex/nofollow directives affect crawler treatment when honored; indexing itself is unmeasured.",
+      "fix": "Review meta robots and X-Robots-Tag; remove restrictive directives only if this page should be discoverable.",
+      "source": "TinyFish Browser rendered DOM"
+    },
+    {
+      "id": "alt",
+      "name": "Image alt text",
+      "status": "warning",
+      "weight": 2,
+      "evidence": "53 DOM img elements; missing alt: 0; explicit empty alt: 33. []. CSS/background/SVG/canvas images unmeasured; decorative intent not inferred.",
+      "impact": "Useful alt text gives image meaning to screen readers and text extraction tools.",
+      "fix": "Add concise purpose-based alt text to informative images; keep alt=\"\" only for decorative images.",
+      "source": "TinyFish Browser rendered DOM"
+    },
+    {
+      "id": "og",
+      "name": "Open Graph metadata",
+      "status": "pass",
+      "weight": 1,
+      "evidence": "{\"title\":\"TinyFish — Web Infrastructure for AI Agents\",\"description\":\"TinyFish provides enterprise infrastructure for AI web agents. Run hundreds of websites simultaneously to navigate, authenticate, extract data, and automate web workflows with a fully serverless architecture.\",\"type\":\"website\",\"image\":\"https://www.tinyfish.ai/opengraph-image\"}. Missing fields: none. Image URL syntax safe: true; image not downloaded.",
+      "impact": "Social and AI tools may use metadata for a consistent page summary.",
+      "fix": "Set og:title, og:description, og:type and a public absolute HTTPS og:image in <head>.",
+      "source": "TinyFish Browser rendered DOM"
+    },
+    {
+      "id": "structured",
+      "name": "Structured data",
+      "status": "pass",
+      "weight": 2,
+      "evidence": "2 JSON-LD blocks; no parse errors; no basic shape warnings; types []; 0 microdata/RDFa candidate elements (not parsed). Syntax and basic presence only; schema semantics and rich-result eligibility not tested.",
+      "impact": "Machine-readable entities can help tools understand content. Presence does not guarantee rich results.",
+      "fix": "Add page-appropriate JSON-LD with @context and @type; validate syntax and review schema.org semantics separately.",
+      "source": "TinyFish Browser rendered DOM"
+    },
+    {
+      "id": "http",
+      "name": "HTTP status",
+      "status": "pass",
+      "weight": 2,
+      "evidence": "Actual TinyFish Browser main-document GET status 200; final URL https://www.tinyfish.ai/; redirects [].",
+      "impact": "Successful HTTP responses let tools retrieve content.",
+      "fix": "Return a successful public main-document response; investigate observed errors or unintended redirects.",
+      "source": "TinyFish Browser network response"
+    },
+    {
+      "id": "robots-txt",
+      "name": "robots.txt policy",
+      "status": "pass",
+      "weight": 0,
+      "evidence": "Actually retrieved https://www.tinyfish.ai/robots.txt; HTTP 200; User-Agent: * Allow: / Disallow: /admin/ Disallow: /private/ Disallow: /dither-studio Sitemap: https://www.tinyfish.ai/sitemap.xml. Local policy result allowed (wildcard/PageProof/TinyFish groups).",
+      "impact": "Crawler restrictions may prevent tool access; policy does not prove indexing.",
+      "fix": "Review robots.txt rules with the site owner; do not bypass a denial.",
+      "source": "Local pinned HTTPS GET"
+    },
+    {
+      "id": "readability",
+      "name": "AI extraction readability",
+      "status": "pass",
+      "weight": 2,
+      "evidence": "TinyFish Fetch returned 5484 characters (excerpt complete). The 100-character warning threshold is a heuristic, not an understanding/SEO guarantee. \"TinyFish — Web Infrastructure for AI Agents\": not present in Fetch text; \"The web stackfor AI agents.\": present in Fetch text. Excerpt: # The web stackfor AI agents. Search, extract, browse, and act on the web with one platform. Connect TinyFish +9 Works with any AI Trusted by Trusted by ## What TinyFish can do. Four jobs people hand their agents every day, on the live web. ### Monitor web pages Get an alert when a page or topic changes. Prices, filings, job posts. ### Enrich records Check contacts and accounts against the live web and fill the gaps. ### Research anything Ask a question, get an answer that links to every source it used. ### Automate portals Sign in, fill forms and pull files from other companies' portals. And much more.All solutions ## Use withChatGPT,Claude,Hermesor in your {code}. Connect TinyFishView API docs ## Give your agent the web. * Fresh results from the live web. Never cached. Real browser-rendered search that returns structured JSON. Try it * From rendered page to clean data in one call. Markdown, JSON or HTML, token-efficient. Try it * Access the web that search can't reach. A real cloud browser you drive with Playwright, Puppeteer or CDP, with persistent state. Try it * Navigate, fill forms, authenticate, return structured results. Give it a goal in plain English. It works the live si",
+      "impact": "Text available to Fetch can be consumed by extraction tools; semantic understanding and visibility are not proven.",
+      "fix": "Keep primary content as accessible text. Compare the excerpt to the intended summary; ensure important headings/content are included without login or canvas-only rendering.",
+      "source": "TinyFish Fetch markdown, ttl=0"
+    },
+    {
+      "id": "visibility",
+      "name": "Search visibility observation",
+      "status": "not tested",
+      "weight": 0,
+      "evidence": "TinyFish Search unavailable: provider_unavailable.",
+      "impact": "Search visibility cannot be assessed from this failed request.",
+      "fix": "Resolve provider availability and retry only within the approved request budget.",
+      "source": "TinyFish Search"
+    },
+    {
+      "id": "links",
+      "name": "Same-origin link health",
+      "status": "not tested",
+      "weight": 0,
+      "evidence": "Optional link checks disabled; zero links requested.",
+      "impact": "Broken destination links can hurt navigation.",
+      "fix": "If needed, run a separately authorized bounded check of up to ten same-origin links.",
+      "source": "No retrieval"
+    }
+  ],
+  "score": {
+    "value": 91,
+    "earned": 20,
+    "available": 22,
+    "measured": 10,
+    "total": 10,
+    "coverage": 100,
+    "formula": "round(100 × Σ(weight × value) / Σ(measured weight)); pass=1, warning=0.5, fail=0. Not tested and weight=0 observations excluded. Coverage = measured scored checks / all scored checks. This is a page hygiene heuristic, not a Google or ranking score."
+  },
+  "priorities": [
+    {
+      "id": "description",
+      "name": "Meta description",
+      "status": "warning",
+      "weight": 2,
+      "evidence": "meta[name=description] count: 1; \"TinyFish provides enterprise infrastructure for AI web agents. Run hundreds of websites simultaneously to navigate, authenticate, extract data, and automate web workflows with a fully serverless architecture.\" (208 characters). 70–160 characters is a heuristic; search snippets are not guaranteed.",
+      "impact": "A clear summary can help tools describe this page; displayed snippets may differ.",
+      "fix": "Write a specific summary of this page, roughly 70–160 characters when natural. Do not pad text just to satisfy a heuristic.",
+      "source": "TinyFish Browser rendered DOM"
+    },
+    {
+      "id": "alt",
+      "name": "Image alt text",
+      "status": "warning",
+      "weight": 2,
+      "evidence": "53 DOM img elements; missing alt: 0; explicit empty alt: 33. []. CSS/background/SVG/canvas images unmeasured; decorative intent not inferred.",
+      "impact": "Useful alt text gives image meaning to screen readers and text extraction tools.",
+      "fix": "Add concise purpose-based alt text to informative images; keep alt=\"\" only for decorative images.",
+      "source": "TinyFish Browser rendered DOM"
+    }
+  ],
+  "observations": {
+    "preflight": {
+      "url": "https://www.tinyfish.ai/",
+      "chain": [
+        {
+          "url": "https://www.tinyfish.ai/",
+          "status": 200
+        }
+      ],
+      "robots": {
+        "url": "https://www.tinyfish.ai/robots.txt",
+        "status": 200,
+        "text": "User-Agent: *\nAllow: /\nDisallow: /admin/\nDisallow: /private/\nDisallow: /dither-studio\n\nSitemap: https://www.tinyfish.ai/sitemap.xml\n",
+        "allowed": true
+      }
+    },
+    "search": {
+      "ok": false,
+      "code": "provider_unavailable"
+    },
+    "fetch": {
+      "ok": true,
+      "data": {
+        "finalUrl": "https://www.tinyfish.ai/",
+        "text": "# The web stackfor AI agents.\n\nSearch, extract, browse, and act on the web with one platform.\n\nConnect TinyFish\n\n+9\n\nWorks with any AI\n\nTrusted by\n\nTrusted by\n\n## What TinyFish can do.\n\nFour jobs people hand their agents every day, on the live web.\n\n### Monitor web pages\n\nGet an alert when a page or topic changes. Prices, filings, job posts.\n\n### Enrich records\n\nCheck contacts and accounts against the live web and fill the gaps.\n\n### Research anything\n\nAsk a question, get an answer that links to every source it used.\n\n### Automate portals\n\nSign in, fill forms and pull files from other companies' portals.\n\nAnd much more.All solutions\n\n## Use withChatGPT,Claude,Hermesor in your {code}.\n\nConnect TinyFishView API docs\n\n## Give your agent the web.\n\n* Fresh results from the live web. Never cached. Real browser-rendered search that returns structured JSON.\n\n  Try it\n* From rendered page to clean data in one call. Markdown, JSON or HTML, token-efficient.\n\n  Try it\n* Access the web that search can't reach. A real cloud browser you drive with Playwright, Puppeteer or CDP, with persistent state.\n\n  Try it\n* Navigate, fill forms, authenticate, return structured results. Give it a goal in plain English. It works the live site and brings back the data.\n\n  89.9% on Online-Mind2Web\n\n  Try it\n\nFind current pricing for the Aurora 14 across our retail partners.\n\nYour agent\n\nSearch · “aurora 14 laptop price”searching\n\nAurora 14 Laptopnorthgate.com· updated 2 days ago\n\nIn stock. $1,299.00. Free shipping on orders over $50.\n\nAurora 14 Laptop (2026)baymarket.com· updated today\n\n$1,199.00 after instant rebate. Limited stock.\n\nAurora 14 Laptophavenshop.com· updated 5 days ago\n\n$1,299.00. Ships in 2 to 3 business days.\n\n+ 7 more results556ms\n\nBaymarket dropped to $1,199 today. The other two are holding at $1,299.\n\nFresh results from the live web. Never cached. Real browser-rendered search that returns structured JSON.\n\nTry it\n\nFind current pricing for the Aurora 14 across our retail partners.\n\nYour agent\n\nSearch · “aurora 14 laptop price”searching\n\nAurora 14 Laptopnorthgate.com· updated 2 days ago\n\nIn stock. $1,299.00. Free shipping on orders over $50.\n\nAurora 14 Laptop (2026)baymarket.com· updated today\n\n$1,199.00 after instant rebate. Limited stock.\n\nAurora 14 Laptophavenshop.com· updated 5 days ago\n\n$1,299.00. Ships in 2 to 3 business days.\n\n+ 7 more results556ms\n\nBaymarket dropped to $1,199 today. The other two are holding at $1,299.\n\n## Access the web behind the login.\n\nYour agent signs in with your own logins, does the work, and records every step.\n\n1Log in\n\n2Navigate\n\n3Complete\n\nportal.acme.com/login\n\nAcme Supplier PortalSign in\n\nEmail\n\nPassword Filled by TinyFish · hidden from the model\n\nContinue\n\nOpen the portal1 of 7 · 0.0s\n\n### TinyVault\n\nConnect 1Password or Bitwarden. Each run gets only the logins you pick, and the model never sees them.\n\n### TinyProfiles\n\nSave a signed-in session once. Later runs start logged in, and sign back in from TinyVault when it expires.\n\n### Run recordings\n\nEvery run is recorded step by step, so you can see exactly what your agent did.\n\n## Trusted by developersand the teams behind them.\n\n> “TinyFish's platform manages web interaction complexity at scale.”\n\nAbhi ShahDirector of Data Science1M+ quarterly web workflows\n\n> “TinyFish builds AI agent solutions that deliver real results.”\n\nJonathan LamSenior Program Manager98.6% less manual work\n\n> “We have a lot of data already, but we were missing genuine crowd-sourced sentiment. TinyFish fills that intelligence gap really well.”\n\nEmily StarrAssociate Director, Revenue Analytics353 net-new restaurants found in Boston\n\nG2 review\n\n> “TinyFish has become my default web layer inside Claude Code and OpenCode. The MCP connection was easy to set up, and I was running searches and fetches within minutes.”\n\nKartik S.Founder · Small business\n\nG2 review\n\n> “I hand it a URL and get back clean Markdown instead of a wall of nav bars, cookie banners and ads, which cuts my token cost on every LLM call downstream.”\n\nAlessio B.Web Developer · Small business\n\nG2 review\n\n> “These are goal-oriented agents, not just tools.”\n\nAnkshuk R.Specialist Programmer · Enterprise\n\nCustomer stories\n\n## Simple pricing for real web work.\n\nGet $8 freeSee full pricing\n\nTinySearchFree\n\nTinyFetchFree\n\nTinyAgent$0.016per step\n\nTinyBrowser$0.002per minute\n\n## Common questions.\n\n### How is this different from other tools?\n\nMost alternatives are point solutions. One does search, another does browsers, another does scraping. TinyFish is the only platform that puts TinySearch, TinyFetch, TinyBrowser, and TinyAgent behind one API key and one Wallet.\n\n### Why would I use this instead of my LLM's built-in web search?\n\nReliability and structure. Our search hits Google's actual live index through a real browser, not a secondary index or cached results. You get typed JSON objects back, not markdown blobs your model has to parse.\n\n### How accurate is TinyAgent?\n\n89.9% overall on Mind2Web, the industry-standard benchmark for web agents. 81.9% on hard tasks, where Operator scores 43.2% and Claude scores 32.4%. All 300 runs are open-sourced and independently verifiable.\n\n### Can agents authenticate into websites?\n\nYes. TinyVault lets agents log into portals, navigate authenticated dashboards, and extract from gated content without exposing credentials to the LLM.\n\n## Give your agentthe real world.\n\nSearch and Fetch are free on every plan.\n\nConnect TinyFish\n\n+9\n\nWorks with any AI",
+        "characters": 5484,
+        "truncated": false,
+        "title": "TinyFish — Web Infrastructure for AI Agents"
+      }
+    },
+    "dom": {
+      "ok": true,
+      "data": {
+        "finalUrl": "https://www.tinyfish.ai/",
+        "status": 200,
+        "redirects": [],
+        "xRobotsTag": null,
+        "limited": true,
+        "blockedRequests": 15,
+        "settle": "bounded-snapshot",
+        "cleanup": "unconfirmed"
+      }
+    }
+  },
+  "limits": [
+    "Single page and bounded rendered snapshot only; length thresholds and scoring are heuristics.",
+    "No Google rankings, indexing status, traffic, backlinks, Lighthouse scores or Core Web Vitals measured.",
+    "Search presence/absence is one provider query observation, excluded from scoring; no causal ranking claim.",
+    "JSON-LD syntax/presence only, not schema.org validation, factual accuracy or rich-result eligibility.",
+    "Remote TinyFish Fetch independently resolves/follows redirects; DNS/redirect safety there is a provider trust boundary. Local requests are pinned; Browser routes validate but cannot pin remote DNS.",
+    "Browser GET-only filtering, request cap and settling deadline can limit rendering; inaccessible DOM checks stay not tested.",
+    "No optional link requests, authentication, interactive actions, writes or audited-site modifications.",
+    "Browser termination unconfirmed; inactivity timeout is the fallback."
+  ]
+}

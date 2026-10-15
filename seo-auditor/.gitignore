@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.data/
+.env
+.env.*
+!.env.example
+.DS_Store
+submission/video-scenes/
+submission/video-render-config.json
+submission/transparent-cursor.png
+submission/*.zip
+submission/release-manifest.json

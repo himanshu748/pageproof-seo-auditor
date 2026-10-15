@@ -1,0 +1,256 @@
+{
+  "version": 1,
+  "id": "52d89da1-80ce-4aaa-8284-cc4c02a1cb43",
+  "mode": "fixture",
+  "url": "https://example.com/malformed",
+  "observedAt": "2026-10-12T16:54:48.045Z",
+  "query": "accessible garden design",
+  "findings": [
+    {
+      "id": "title",
+      "name": "Page title",
+      "status": "pass",
+      "weight": 3,
+      "evidence": "SYNTHETIC; no network request made. head title count: 1; \"Malformed structured data test page\" (35 characters). 30–60 characters is a display heuristic, not a Google requirement.",
+      "impact": "A descriptive unique title helps readers and search tools identify the page.",
+      "fix": "Keep this descriptive title unique as content changes.",
+      "source": "Synthetic fixture contract — Synthetic HTML fixture (TinyFish not called)"
+    },
+    {
+      "id": "description",
+      "name": "Meta description",
+      "status": "fail",
+      "weight": 2,
+      "evidence": "SYNTHETIC; no network request made. meta[name=description] count: 0; \"\" (0 characters). 70–160 characters is a heuristic; search snippets are not guaranteed.",
+      "impact": "A clear summary can help tools describe this page; displayed snippets may differ.",
+      "fix": "Add one unique <meta name=\"description\" content=\"…\"> in <head>.",
+      "source": "Synthetic fixture contract — Synthetic HTML fixture (TinyFish not called)"
+    },
+    {
+      "id": "headings",
+      "name": "Heading structure",
+      "status": "pass",
+      "weight": 3,
+      "evidence": "SYNTHETIC; no network request made. 1 DOM headings; H1 count 1; skipped levels false; empty headings false. [{\"level\":1,\"value\":\"Broken JSON-LD\"}]",
+      "impact": "Headings help readers and extraction tools follow the content hierarchy.",
+      "fix": "Use one clear H1 and ordered H2/H3 sections without skipping levels.",
+      "source": "Synthetic fixture contract — Synthetic HTML fixture (TinyFish not called)"
+    },
+    {
+      "id": "canonical",
+      "name": "Canonical URL",
+      "status": "warning",
+      "weight": 2,
+      "evidence": "SYNTHETIC; no network request made. Missing canonical.",
+      "impact": "An unambiguous canonical can help consolidate duplicate page signals.",
+      "fix": "Add one absolute HTTPS <link rel=\"canonical\" href=\"…\"> in <head>, pointing to your preferred public page.",
+      "source": "Synthetic fixture contract — Synthetic HTML fixture (TinyFish not called)"
+    },
+    {
+      "id": "robots",
+      "name": "Robots directives",
+      "status": "pass",
+      "weight": 3,
+      "evidence": "SYNTHETIC; no network request made. No robots meta found in DOM; X-Robots-Tag absent in retrieved main-document response. Default crawler behavior may apply; indexing not verified.",
+      "impact": "Noindex/nofollow directives affect crawler treatment when honored; indexing itself is unmeasured.",
+      "fix": "Review meta robots and X-Robots-Tag; remove restrictive directives only if this page should be discoverable.",
+      "source": "Synthetic fixture contract — Synthetic HTML fixture (TinyFish not called)"
+    },
+    {
+      "id": "alt",
+      "name": "Image alt text",
+      "status": "pass",
+      "weight": 2,
+      "evidence": "SYNTHETIC; no network request made. 0 DOM img elements; missing alt: 0; explicit empty alt: 0. []. No img elements; other image forms unmeasured.",
+      "impact": "Useful alt text gives image meaning to screen readers and text extraction tools.",
+      "fix": "Add concise purpose-based alt text to informative images; keep alt=\"\" only for decorative images.",
+      "source": "Synthetic fixture contract — Synthetic HTML fixture (TinyFish not called)"
+    },
+    {
+      "id": "og",
+      "name": "Open Graph metadata",
+      "status": "warning",
+      "weight": 1,
+      "evidence": "SYNTHETIC; no network request made. {\"title\":\"\",\"description\":\"\",\"type\":\"\",\"image\":\"\"}. Missing fields: title, description, type, image. Image URL syntax safe: true; image not downloaded.",
+      "impact": "Social and AI tools may use metadata for a consistent page summary.",
+      "fix": "Set og:title, og:description, og:type and a public absolute HTTPS og:image in <head>.",
+      "source": "Synthetic fixture contract — Synthetic HTML fixture (TinyFish not called)"
+    },
+    {
+      "id": "structured",
+      "name": "Structured data",
+      "status": "fail",
+      "weight": 2,
+      "evidence": "SYNTHETIC; no network request made. 2 JSON-LD blocks; Block 1: invalid JSON syntax; Block 2: non-object JSON; Block 2: non-object JSON; types []; 0 microdata/RDFa candidate elements (not parsed). Syntax and basic presence only; schema semantics and rich-result eligibility not tested.",
+      "impact": "Machine-readable entities can help tools understand content. Presence does not guarantee rich results.",
+      "fix": "Fix JSON syntax in the identified application/ld+json blocks (double quotes, commas, escaped strings), then validate schema semantics separately.",
+      "source": "Synthetic fixture contract — Synthetic HTML fixture (TinyFish not called)"
+    },
+    {
+      "id": "http",
+      "name": "HTTP status",
+      "status": "pass",
+      "weight": 2,
+      "evidence": "SYNTHETIC; no network request made. Actual TinyFish Browser main-document GET status 200; final URL https://example.com/malformed; redirects [].",
+      "impact": "Successful HTTP responses let tools retrieve content.",
+      "fix": "Return a successful public main-document response; investigate observed errors or unintended redirects.",
+      "source": "Synthetic fixture contract — TinyFish Browser network response"
+    },
+    {
+      "id": "robots-txt",
+      "name": "robots.txt policy",
+      "status": "pass",
+      "weight": 0,
+      "evidence": "SYNTHETIC; no network request made. Actually retrieved https://example.com/robots.txt; HTTP 200; User-agent: * Allow: /. Local policy result allowed (wildcard/PageProof/TinyFish groups).",
+      "impact": "Crawler restrictions may prevent tool access; policy does not prove indexing.",
+      "fix": "Review robots.txt rules with the site owner; do not bypass a denial.",
+      "source": "Synthetic fixture contract — Local pinned HTTPS GET"
+    },
+    {
+      "id": "readability",
+      "name": "AI extraction readability",
+      "status": "pass",
+      "weight": 2,
+      "evidence": "SYNTHETIC; no network request made. TinyFish Fetch returned 163 characters (excerpt complete). The 100-character warning threshold is a heuristic, not an understanding/SEO guarantee. \"Malformed structured data test page\": not present in Fetch text; \"Broken JSON-LD\": not present in Fetch text. Excerpt: A practical guide to accessible garden design. Plan an accessible garden with useful paths and planting ideas for all visitors. This is synthetic fixture extraction text.",
+      "impact": "Text available to Fetch can be consumed by extraction tools; semantic understanding and visibility are not proven.",
+      "fix": "Keep primary content as accessible text. Compare the excerpt to the intended summary; ensure important headings/content are included without login or canvas-only rendering.",
+      "source": "Synthetic fixture contract — TinyFish Fetch markdown, ttl=0"
+    },
+    {
+      "id": "visibility",
+      "name": "Search visibility observation",
+      "status": "pass",
+      "weight": 0,
+      "evidence": "SYNTHETIC; no network request made. TinyFish Search query \"accessible garden design\", US/en, first response page; 1 results returned; exact page matches 1. [{\"url\":\"https://example.com/malformed\",\"title\":\"A practical guide to accessible garden design\",\"snippet\":\"Synthetic test snippet; TinyFish was not called.\"}]. No Google rank/index status inferred from presence or absence.",
+      "impact": "Query results and snippets show how this provider describes content at this moment; they cannot establish overall search visibility or causation.",
+      "fix": "Compare returned snippets with your intended title/summary. If this page is absent, try a relevant target query and review readability/content; absence in one query is not evidence of deindexing.",
+      "source": "Synthetic fixture contract — TinyFish Search response (not a Google measurement)"
+    },
+    {
+      "id": "links",
+      "name": "Same-origin link health",
+      "status": "not tested",
+      "weight": 0,
+      "evidence": "SYNTHETIC; no network request made. Optional link checks disabled; zero links requested.",
+      "impact": "Broken destination links can hurt navigation.",
+      "fix": "If needed, run a separately authorized bounded check of up to ten same-origin links.",
+      "source": "Synthetic fixture contract — No retrieval"
+    }
+  ],
+  "score": {
+    "value": 75,
+    "earned": 16.5,
+    "available": 22,
+    "measured": 10,
+    "total": 10,
+    "coverage": 100,
+    "formula": "round(100 × Σ(weight × value) / Σ(measured weight)); pass=1, warning=0.5, fail=0. Not tested and weight=0 observations excluded. Coverage = measured scored checks / all scored checks. This is a page hygiene heuristic, not a Google or ranking score."
+  },
+  "priorities": [
+    {
+      "id": "description",
+      "name": "Meta description",
+      "status": "fail",
+      "weight": 2,
+      "evidence": "SYNTHETIC; no network request made. meta[name=description] count: 0; \"\" (0 characters). 70–160 characters is a heuristic; search snippets are not guaranteed.",
+      "impact": "A clear summary can help tools describe this page; displayed snippets may differ.",
+      "fix": "Add one unique <meta name=\"description\" content=\"…\"> in <head>.",
+      "source": "Synthetic fixture contract — Synthetic HTML fixture (TinyFish not called)"
+    },
+    {
+      "id": "structured",
+      "name": "Structured data",
+      "status": "fail",
+      "weight": 2,
+      "evidence": "SYNTHETIC; no network request made. 2 JSON-LD blocks; Block 1: invalid JSON syntax; Block 2: non-object JSON; Block 2: non-object JSON; types []; 0 microdata/RDFa candidate elements (not parsed). Syntax and basic presence only; schema semantics and rich-result eligibility not tested.",
+      "impact": "Machine-readable entities can help tools understand content. Presence does not guarantee rich results.",
+      "fix": "Fix JSON syntax in the identified application/ld+json blocks (double quotes, commas, escaped strings), then validate schema semantics separately.",
+      "source": "Synthetic fixture contract — Synthetic HTML fixture (TinyFish not called)"
+    },
+    {
+      "id": "canonical",
+      "name": "Canonical URL",
+      "status": "warning",
+      "weight": 2,
+      "evidence": "SYNTHETIC; no network request made. Missing canonical.",
+      "impact": "An unambiguous canonical can help consolidate duplicate page signals.",
+      "fix": "Add one absolute HTTPS <link rel=\"canonical\" href=\"…\"> in <head>, pointing to your preferred public page.",
+      "source": "Synthetic fixture contract — Synthetic HTML fixture (TinyFish not called)"
+    },
+    {
+      "id": "og",
+      "name": "Open Graph metadata",
+      "status": "warning",
+      "weight": 1,
+      "evidence": "SYNTHETIC; no network request made. {\"title\":\"\",\"description\":\"\",\"type\":\"\",\"image\":\"\"}. Missing fields: title, description, type, image. Image URL syntax safe: true; image not downloaded.",
+      "impact": "Social and AI tools may use metadata for a consistent page summary.",
+      "fix": "Set og:title, og:description, og:type and a public absolute HTTPS og:image in <head>.",
+      "source": "Synthetic fixture contract — Synthetic HTML fixture (TinyFish not called)"
+    }
+  ],
+  "observations": {
+    "preflight": {
+      "url": "https://example.com/malformed",
+      "chain": [
+        {
+          "url": "https://example.com/malformed",
+          "status": 200
+        }
+      ],
+      "robots": {
+        "url": "https://example.com/robots.txt",
+        "status": 200,
+        "text": "User-agent: *\nAllow: /",
+        "allowed": true
+      }
+    },
+    "dom": {
+      "ok": true,
+      "data": {
+        "finalUrl": "https://example.com/malformed",
+        "status": 200,
+        "redirects": [],
+        "xRobotsTag": null,
+        "limited": false,
+        "blockedRequests": 0,
+        "settle": "network-idle",
+        "cleanup": "confirmed"
+      }
+    },
+    "fetch": {
+      "ok": true,
+      "data": {
+        "finalUrl": "https://example.com/malformed",
+        "text": "A practical guide to accessible garden design. Plan an accessible garden with useful paths and planting ideas for all visitors. This is synthetic fixture extraction text.",
+        "characters": 163,
+        "truncated": false,
+        "title": "A practical guide to accessible garden design"
+      }
+    },
+    "search": {
+      "ok": true,
+      "data": {
+        "query": "accessible garden design",
+        "results": [
+          {
+            "url": "https://example.com/malformed",
+            "title": "A practical guide to accessible garden design",
+            "snippet": "Synthetic test snippet; TinyFish was not called."
+          }
+        ],
+        "returned": 1,
+        "location": "US",
+        "language": "en"
+      }
+    }
+  },
+  "limits": [
+    "Single page and bounded rendered snapshot only; length thresholds and scoring are heuristics.",
+    "No Google rankings, indexing status, traffic, backlinks, Lighthouse scores or Core Web Vitals measured.",
+    "Search presence/absence is one provider query observation, excluded from scoring; no causal ranking claim.",
+    "JSON-LD syntax/presence only, not schema.org validation, factual accuracy or rich-result eligibility.",
+    "Remote TinyFish Fetch independently resolves/follows redirects; DNS/redirect safety there is a provider trust boundary. Local requests are pinned; Browser routes validate but cannot pin remote DNS.",
+    "Browser GET-only filtering, request cap and settling deadline can limit rendering; inaccessible DOM checks stay not tested.",
+    "No optional link requests, authentication, interactive actions, writes or audited-site modifications."
+  ]
+}
