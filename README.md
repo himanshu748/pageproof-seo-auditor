@@ -2,7 +2,9 @@
 
 PageProof compares TinyFish Search results, live Fetch text and rendered Browser DOM for a permitted public HTTPS page. Each finding includes evidence, likely impact and a specific fix, with HTML and JSON exports.
 
-[Demo video](seo-auditor/submission/PageProof-demo.mp4) · [Run locally](seo-auditor/README.md) · [Exact bounty brief and acceptance checklist](seo-auditor/docs/ACCEPTANCE.md) · [Genuine evidence and limitations](seo-auditor/docs/EVIDENCE.md)
+[Download the demo (MP4, 2.6 MB)](https://github.com/himanshu748/pageproof-seo-auditor/raw/refs/heads/codex/publication/seo-auditor/submission/PageProof-demo.mp4) · [Run locally](seo-auditor/README.md) · [Exact bounty brief and acceptance checklist](seo-auditor/docs/ACCEPTANCE.md) · [Genuine evidence and limitations](seo-auditor/docs/EVIDENCE.md)
+
+GitHub's file viewer cannot preview this video. Use the download link above to open the original 80-second walkthrough in your video player.
 
 ```sh
 cd seo-auditor
@@ -19,4 +21,4 @@ The demo includes a genuine 14 October 2026 audit, saved genuine receipts from s
 
 Fresh installation, all 30 tests, type-check, build, fixture demo and compiled-server/export checks passed on 15 October with live provider access disabled. See [validation receipt](seo-auditor/evidence/submission-validation.json).
 
-This repository contains only the reviewed PageProof bundle plus this navigation README and publication records. Preparation documents preserve their original measurement dates. Public posting is authorized; final bounty submission remains pending the owner's approval. No bounty approval, points or payment is claimed.
+This repository contains only the reviewed PageProof bundle plus this navigation README and publication records. Preparation documents preserve their original measurement dates. PageProof was submitted on 15 October 2026. TinyBounties showed the SEO Page Auditor bounty as completed on 21 October 2026, awarding 250 points and a $15 gift card. The portal marked the gift card as on its way, with a 5–7 day delivery estimate; receipt of payment is not confirmed.
