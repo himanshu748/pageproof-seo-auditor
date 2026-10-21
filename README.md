@@ -2,9 +2,11 @@
 
 PageProof compares TinyFish Search results, live Fetch text and rendered Browser DOM for a permitted public HTTPS page. Each finding includes evidence, likely impact and a specific fix, with HTML and JSON exports.
 
-[Download the demo (MP4, 2.6 MB)](https://github.com/himanshu748/pageproof-seo-auditor/raw/refs/heads/codex/publication/seo-auditor/submission/PageProof-demo.mp4) · [Run locally](seo-auditor/README.md) · [Exact bounty brief and acceptance checklist](seo-auditor/docs/ACCEPTANCE.md) · [Genuine evidence and limitations](seo-auditor/docs/EVIDENCE.md)
+[Watch the demo](https://github.com/user-attachments/assets/b27b752d-d055-4868-b8c7-5cec70ae9b49) · [Download the demo (MP4, 2.6 MB)](https://github.com/himanshu748/pageproof-seo-auditor/raw/refs/heads/codex/publication/seo-auditor/submission/PageProof-demo.mp4) · [Run locally](seo-auditor/README.md) · [Exact bounty brief and acceptance checklist](seo-auditor/docs/ACCEPTANCE.md) · [Genuine evidence and limitations](seo-auditor/docs/EVIDENCE.md)
 
-GitHub's file viewer cannot preview this video. Use the download link above to open the original 80-second walkthrough in your video player.
+GitHub's file viewer cannot preview the MP4 stored in the repository. The attachment below plays the original 80-second walkthrough; the download link is available if the player does not load.
+
+https://github.com/user-attachments/assets/b27b752d-d055-4868-b8c7-5cec70ae9b49
 
 ```sh
 cd seo-auditor
